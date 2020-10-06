@@ -1,0 +1,47 @@
+{
+  "name": "bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "jimp": "^0.16.1",
+    "moment": "^2.29.1",
+    "quick.db": "^7.1.2",
+    "request": "^2.88.2",
+    "snekfetch": "^4.0.4",
+    "superagent": "^6.1.0",
+    "fs-extra": "^9.0.1",
+    "canvas": "^2.6.1",
+    "os": "^0.1.1",
+    "cpu-stat": "^2.0.1",
+    "numbertowords": "^0.0.16",
+    "number-to-words": "^1.2.4",
+    "number-words": "^1.1.1",
+    "weather-js": "^2.0.0",
+    "mal-scraper": "^2.11.1",
+    "random-puppy": "^1.1.0",
+    "ms": "^2.1.2",
+    "mathjs": "^7.2.0",
+    "node-fetch": "^2.6.1",
+    "axios": "^0.20.0",
+    "convert-seconds": "^1.0.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/hello-express"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
