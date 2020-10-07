@@ -1,4 +1,4 @@
-onst Discord = require('discord.js')
+const Discord = require('discord.js')
 const c = require('../config.json')
 
 exports.run = async (bot, message, args) => {
