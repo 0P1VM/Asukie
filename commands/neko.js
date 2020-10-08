@@ -8,7 +8,7 @@ exports.run = async (client, message, args) => {
     
     let embed = new Discord.MessageEmbed()
     .setColor("#8500de")
-    .setDescription(`<a:gatinhaf:754005218605269002> **Neko-niiii**`)
+    .setDescription(`<:nekoniii:763847144226029598> **Neko-niiii**`)
     .setImage(body.url)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
     message.channel.send({embed})

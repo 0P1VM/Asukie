@@ -16,7 +16,7 @@ module.exports = {
                 let deaths = data.deaths.value.toLocaleString()
 
                 const embed = new Discord.MessageEmbed()
-                .setTitle(`Estatísticas COVID-19 mundial 🌎`)
+                .setTitle(`Estatísticas COVID-19 mundial`)
                 .addField('Casos confirmados', confirmed)
                 .addField('Recuperados', recovered)
                 .addField('Mortes', deaths)
@@ -35,7 +35,7 @@ module.exports = {
                 let deaths = data.deaths.value.toLocaleString()
 
                 const embed = new Discord.MessageEmbed()
-                .setTitle(`Estatísticas COVID-19 no **${countries}**`)
+                .setTitle(`Estatísticas COVID-19, no(a) **${countries}**`)
                 .addField('Caso Confirmados', confirmed)
                 .addField('Recuperados', recovered)
                 .addField('Mortes', deaths)

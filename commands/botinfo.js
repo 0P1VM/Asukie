@@ -11,7 +11,7 @@ message.delete();
     var linguagem = ('[JavaScript](https://www.javascript.com/)')
     var utilizando = ('[Node.js](https://nodejs.org/en/)')
     var livraria = ('[Discord.js](https://discord.js.org/#/)')
-    var host = ('[Glitch](https://glitch.com/)')
+    var host = ('[DisCloud](https://discloudbot.com/)')
     var adicioneeu = ('[Clique Aqui](https://discord.com/api/oauth2/authorize?client_id=749044223692767302&permissions=8&scope=bot)')
     var suporte = ('[Clique Aqui](https://discord.gg/QcuZDqv)')
     var dev = "<@!752954404986159275>"

@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
   .setColor('#8500de')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 
-    var replies = ["Sim", "Não", "Talvez", "Quem sabe...", "" ];
+    var replies = [ "Sim", "Não", "Talvez", "Quem sabe...", "Claro", "Se pá", "Jamais", "", "" ];
     var result = Math.floor((Math.random() * replies.length));
     
     var duvida = args.slice(0).join(" ");

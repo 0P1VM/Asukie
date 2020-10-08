@@ -8,7 +8,7 @@ module.exports.run = async(client, message, args) => {
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Escreva uma mensagem de saida*`)
   .addField(`:hammer: | **Uso**`, `\`${c.prefix}ship <@user> <@user2>\``, true)
-  .addField(`:book: | **Exemplo**`, `\`${c.prefix}ship @Asukie @7\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${c.prefix}ship @Asukie @AsukieHomi\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`Nenhuma\``)
   .setColor('#8500de')

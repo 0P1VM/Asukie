@@ -17,7 +17,7 @@ let status2 = db.get(`status2_${message.guild.id}`)
     if(defc === null) defc = (`Atualmente Nenhum.`)
     let a1 = new Discord.MessageEmbed()
     .setColor('#8500de')
-    .setDescription('<:incorreto:734851440765567016> **|** Você precisa ter a permissão de gerenciar servidor para fazer isso.')
+    .setDescription('<a:errado:753245066965024871> **|** Você precisa ter a permissão de gerenciar servidor para fazer isso.')
 
     if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(a1)
 
@@ -45,12 +45,12 @@ let status2 = db.get(`status2_${message.guild.id}`)
         let embedT = new Discord.MessageEmbed()
         .setColor("#8500de") 
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-        .setDescription(`**<:textchat:761818574859010109> | Digite o tempo em que a mensagem será deletada automaticamente.**\n` +
+        .setDescription(`**<:textchat:761818574859010109> **|** Digite o tempo em que a mensagem será deletada automaticamente.**\n` +
 `> **Exemplo:** \`30 segundos\` ou \`2 minutos\``)
         let embedL = new Discord.MessageEmbed()
         .setColor("#8500de") 
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-        .setDescription(`**<:textchat:761818574859010109> | Digite uma nova mensagem de entrada.\n` +
+        .setDescription(`**<:textchat:761818574859010109> **|** Digite uma nova mensagem de entrada.\n` +
                        `Variáveis:** \`{usuario}\` e \`{servidor}\``)
         let entrada = new Discord.MessageEmbed()
         .setTitle(`Configurações de Entrada - Asukie™`)
@@ -58,16 +58,16 @@ let status2 = db.get(`status2_${message.guild.id}`)
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
         .setDescription(`**Servidor:** ${message.guild.name}\n` +
         `\n**Configurações disponiveis:**\n` +
-        `<a:um_:753380031031672873> | Mensagem de bem-vindo\n` +
-        `<a:dois_:753380069971591178> | Tempo para deletar a mensagem\n` +
+        `<a:um_:753380031031672873> **|** Mensagem de bem-vindo\n` +
+        `<a:dois_:753380069971591178> **|** Tempo para deletar a mensagem\n` +
         `\n• Canal definido: ${defc}\n` +
-        `<a:tres_:753380098966814811> | Canal que a mensagem será enviada\n` +
+        `<a:tres_:753380098966814811> **|** Canal que a mensagem será enviada\n` +
         `\n**• Deletar Mensagens automaticamente:**\n` +
         `> Tempo Definido: \`${tempoo} Segundos\`\n` +
-        `<a:quatro_:753380130503655562> | Atualmente: (${status})\n` +
+        `<a:quatro_:753380130503655562> **|** Atualmente: (${status})\n` +
         `\n**• Ativar mensagens de boas vindas:**\n` +
-        `<a:cinco_:753380150590046309> | Atualmente: (${status2})\n` +
-        `\n<a:seis_:753385356216238201> | Acesse as configurações de mensagem privada\n` +
+        `<a:cinco_:753380150590046309> **|** Atualmente: (${status2})\n` +
+        `\n<a:seis_:753385356216238201> **|** Acesse as configurações de mensagem privada\n` +
         `\n**Informações:**\n` +
         `Todas as opções são sobre as configurações da mensagem de bem-vindo\n` +
         `Basta reagir com o número de uma opção para acessar sua configuração.\n` +
