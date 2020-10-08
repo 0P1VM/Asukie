@@ -12,7 +12,7 @@ exports.run = async (client, message, args) => {
     
     const embed = new Discord.MessageEmbed()
     .setColor("#8500de")
-    .setDescription(`**${message.author.username}** deu um tapa em **${message.mentions.users.first().username}**! <a:tapa:762706444226396168>`)
+    .setDescription(`${message.author.username} **deu um tapa em** ${message.mentions.users.first().username} <a:tapa:762706444226396168>`)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .setImage(body.url) 
     message.channel.send({embed})

@@ -10,7 +10,7 @@ module.exports.run = async(client, message, args) => {
   .addField(`:hammer: | **Uso**`, `\`${c.prefix}ship <@user> <@user2>\``, true)
   .addField(`:book: | **Exemplo**`, `\`${c.prefix}ship @Asukie @7\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
-  .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`${c.prefix}shippar\``)
+  .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`Nenhuma\``)
   .setColor('#8500de')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   

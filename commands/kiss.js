@@ -20,7 +20,7 @@ let avatar = message.author.displayAvatarURL({dynamic: true});
   const embed = new Discord.MessageEmbed()
         .setTitle('')
         .setColor('#8500de')
-        .setDescription(`<a:Borbo:761702886996312064> ${message.author} **beijou** ${user}`)
+        .setDescription(`<a:Borbo:761702886996312064> ${message.author} ** acaba de beijar** ${user}`)
         .setImage(body.url)
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   await message.channel.send(embed).then(msg => {

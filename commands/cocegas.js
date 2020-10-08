@@ -9,7 +9,7 @@ exports.run = async (client, message, args) => {
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Faça cócegas em alguém*`)
   .addField(`:hammer: **|** Uso`, `\`${c.prefix}cocegas <@user>\``, true)
-  .addField(`:book: **|** Exemplo`, `\`${c.prefix}cocegas @young\``, true)
+  .addField(`:book: **|** Exemplo`, `\`${c.prefix}cocegas @Asukie\``, true)
   .addField(`:bookmark: **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: **Alternativas**`, `\`${c.prefix}tickle\``)
   .setColor('#8500de')
@@ -22,7 +22,7 @@ exports.run = async (client, message, args) => {
     
     const embed = new Discord.MessageEmbed()
     .setColor("#8500de")
-    .setDescription(`**${message.author.username}** fez cócegas em **${message.mentions.users.first().username}** :joy:`)
+    .setDescription(`${message.author.username} **fez cócegas em** ${message.mentions.users.first().username} <:cocegas:763724557570932786>`)
     .setImage(body.url)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
     message.channel.send({embed})

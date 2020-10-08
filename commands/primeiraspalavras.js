@@ -28,7 +28,7 @@ exports.run = async (bot, message, args) => {
                     })
                 })
             } else {
-                message.channel.send('<a:errado:753245066965024871> **|** Eu não tenho a permissão necessária para fazer isso. `ATTACH_FILES`')
+                message.channel.send('<a:errado:753245066965024871> **|** Preciso da permissão **ATTACH_FILES** pra executar esse comando.')
             }
         }
     }

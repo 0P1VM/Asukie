@@ -8,10 +8,10 @@ exports.run = async (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Dê um abraço em alguém*`)
-  .addField(`:hammer: **|** Uso`, `\`${c.prefix}abraço <@user>\``, true)
-  .addField(`:book: **|** Exemplo`, `\`${c.prefix}abraço @Asukie™\``, true)
+  .addField(`:hammer: **|** Uso`, `\`${c.prefix}hug <@user>\``, true)
+  .addField(`:book: **|** Exemplo`, `\`${c.prefix}hug @Asukie™\``, true)
   .addField(`:bookmark: **|** Permissão`, `\`Nenhuma\``)
-  .addField(`:twisted_rightwards_arrows: **|** Alternativas`, `\`${c.prefix}hug, ${c.prefix}abraçar\``)
+  .addField(`:twisted_rightwards_arrows: **|** Alternativas`, `\`${c.prefix}hug\``)
   .setColor('#8500de')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
 
@@ -21,7 +21,7 @@ exports.run = async (client, message, args) => {
     
     const embed = new Discord.MessageEmbed()
     .setColor("#8500de")
-    .setDescription(`**${message.author.username}** deu um abraço em **${message.mentions.users.first().username}** <a:Abraco:761838210602237952>`)
+    .setDescription(`${message.author.username} **deu um abraço em** ${message.mentions.users.first().username} <a:Abraco:761838210602237952>`)
     .setImage(body.url) 
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
     message.channel.send({embed})

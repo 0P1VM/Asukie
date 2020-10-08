@@ -11,11 +11,11 @@ message.delete();
   `<:seta1:762492762192478216> [Me adicione em seu servidor](https://discord.com/api/oauth2/authorize?client_id=749044223692767302&permissions=8&scope=bot)\n` +
   `<:seta1:762492762192478216> [Vote em mim no top.gg](https://AlgoAqui.com)\n` +
   `<:seta1:762492762192478216> [Meu servidor de suporte](https://discord.gg/qnDBa53)**`)
-	  .addField(`Opções:`, `**<a:um_:753380031031672873> | Administração\n` +
-    `<a:dois_:753380069971591178> | Moderação\n` +
-    `<a:tres_:753380098966814811> | Configuração\n` +
+	  .addField(`Opções:`, `**<a:um_:753380031031672873> | Administração | MANUTENÇÃO\n` +
+    `<a:dois_:753380069971591178> | Moderação | MANUTENÇÃO\n` +
+    `<a:tres_:753380098966814811> | Configuração | MANUTENÇÃO\n` +
 		`<a:quatro_:753380130503655562> | Interação\n` +
-    `<a:cinco_:753380150590046309> | Utilidades**`)
+    `<a:cinco_:753380150590046309> | Utilidades | MANUTENÇÃO**`)
     .setFooter(`Página 0 de 5 | Solicitado por: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
 	.setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
 .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
@@ -109,15 +109,17 @@ message.delete();
  `<:seta1:762492762192478216> **Kiss** - Beije seu crush.\n` +
  `<:seta1:762492762192478216> **Neko** - Veja melhores gifs de neko.\n` +
  `<:seta1:762492762192478216> **Ship** - Faça um ship de algum casal.\n` +
- `<:seta1:762492762192478216> **Cafune** - Faça um cafuné de algum amigo(a).\n` +
+ `<:seta1:762492762192478216> **Cafune** - Faça um cafuné em algum amigo(a).\n` +
+ `<:seta1:762492762192478216> **Matar** - Mate alguém que você não goste. [**Aviso: ``Leve na zoeira porfavor.``]\n` +
  `<:seta1:762492762192478216> **Covid** - Veja os casos de Covid no mundo inteiro.\n` +
  `<:seta1:762492762192478216> **Tapa** - De um tapa em alguém.\n` +
  `<:seta1:762492762192478216> **Mcskin** - É um comando pra você conseguir a skin de alguma conta do Minecraft.\n` +
  `<:seta1:762492762192478216> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` +                   
  `<:seta1:762492762192478216> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
- `<:seta1:762492762192478216> **Hackear** - "Hackei" algum membro. [**Comando focado na zoeira**]\n` +
+ `<:seta1:762492762192478216> **Hackear** - "Hackei" algum membro. [**Aviso:**``Comando focado na zoeira``]\n` +
  `<:seta1:762492762192478216> **Ascii** - Escreva em modo Ascii.\n` +
- `<:seta1:762492762192478216> **Hug** - De um abraço em algum amigo.\n` +                   
+ `<:seta1:762492762192478216> **Duvida** - Deixa eu tirar uma dúvida sua.\n` +
+ `<:seta1:762492762192478216> **Hug** - De um abraço em algum amigo(a).\n` +                   
  `<:seta1:762492762192478216> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                    
  `<:seta1:762492762192478216> **Bigtext** - Escreva com letras grandes.\n` +
  `<:seta1:762492762192478216> **Clima** - Veja o clima de alguma cidade.\n` +                   
@@ -172,6 +174,6 @@ message.delete();
 }
 
 exports.help = {
-    name: 'ajuda',
+    name: 'help',
     aliases: ['ajuda']
 }
