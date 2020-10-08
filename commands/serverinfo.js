@@ -25,7 +25,7 @@ message.delete();
     { name: `<:membros_Asukie:761659699266715668> Quantidade de membros:`, value: `ㅤ**<:online:753979848883568720> ${usuarios.filter(member => member.presence.status === 'online').size}**\n` +
     `ㅤ**<:idle:753983926917267456> ${usuarios.filter(member => member.presence.status === 'idle').size}**\n` +
     `ㅤ**<:dnd:753979743828967576> ${usuarios.filter(member => member.presence.status === 'dnd').size}**\n` +
-    `ㅤ**<:setinha:760962366023663687> ${amiguinhos}**`, inline: true},
+    `ㅤ**<:setinha:763773726419583017> ${amiguinhos}**`, inline: true},
    { name: `ㅤㅤ<:canais_Asukie:761661479615070248> Canais`, value: `ㅤㅤㅤ**Texto:** ${canais.filter(channel => channel.type === 'text').size}\n` +
                                                                 `ㅤㅤㅤ**Voz:** ${canais.filter(channel => channel.type === 'voice').size}`, inline: true}
 )
