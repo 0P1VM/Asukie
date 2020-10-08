@@ -61,9 +61,9 @@ message.delete();
    .addField(`<:ets:761068291941990400> **| Estatísticas:**`, `> Servidores: \`${client.guilds.cache.size}\`\n` +
    `> Total de canais: \`${client.channels.cache.size}\`\n` +
    `> Quantia de usuários: \`${client.users.cache.size}\``)
-   .addField(`<:pgm:761068488424161351> **| Informações Técnicas:**`, `<:seta1:762492762192478216> Linguagem: **${linguagem}**\n` +
-   `<:seta1:762492762192478216> Hospedagem: **${host}**\n` +
-   `<:seta1:762492762192478216> Documentação: **${livraria}**\n` +
+   .addField(`<:pgm:761068488424161351> **| Informações Técnicas:**`, `> Linguagem: **${linguagem}**\n` +
+   `> Hospedagem: **${host}**\n` +
+   `> Documentação: **${livraria}**\n` +
    `\n<:seta1:762492762192478216> **Me adicione: ${adicioneeu}**\n` +
    `<:seta1:762492762192478216> **Servidor Suporte: ${suporte}**`) 
    .setThumbnail(`https://media.discordapp.net/attachments/760597034138075158/761074283505385492/puzzel-bot-icon.png?width=480&height=480`) 
