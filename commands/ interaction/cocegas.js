@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const c = require('../config.json');
 const superagent = require('superagent');
 
 exports.run = async (client, message, args) => {
@@ -8,8 +7,8 @@ exports.run = async (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Faça cócegas em alguém*`)
-  .addField(`:hammer: **|** Uso`, `\`${c.prefix}cocegas <@user>\``, true)
-  .addField(`:book: **|** Exemplo`, `\`${c.prefix}cocegas @Asukie\``, true)
+  .addField(`:hammer: **|** Uso`, `\`${client.config.prefix}cocegas <@user>\``, true)
+  .addField(`:book: **|** Exemplo`, `\`${client.config.prefix}cocegas @Asukie\``, true)
   .addField(`:bookmark: **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: **Alternativas**`, `\`${c.prefix}tickle\``)
   .setColor('#8500de')

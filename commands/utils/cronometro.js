@@ -8,10 +8,10 @@ exports.run = async (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Vou conometrar um tempo para você*`)
-  .addField(`:hammer: | **Uso**`, `\`${c.prefix}cronometro <tempo>\``, true)
-  .addField(`:book: | **Exemplo**`, `\`${c.prefix}cronometro 10s\``, true)
+  .addField(`:hammer: | **Uso**`, `\`${client.config.prefix}cronometro <tempo>\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${client.config.prefix}cronometro 10s\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
-  .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`${c.prefix}lembrete, ${c.prefix}lembrar\``)
+  .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`${client.config.prefix}lembrete, ${client.config.prefix}lembrar\``)
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
   .setColor('#8500de')  
 

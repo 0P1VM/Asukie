@@ -1,5 +1,4 @@
 var weather = require('weather-js');
-const c = require('../config.json');
 const Discord = require('discord.js')
 
 exports.run = (client, message, args) => {
@@ -9,8 +8,8 @@ exports.run = (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Veja o clima em alguma cidade*`)
-  .addField(`:hammer: | **Uso**`, `\`${c.prefix}clima <cidade>\``, true)
-  .addField(`:book: | **Exemplo**`, `\`${c.prefix}clima Rio de Janeiro\``, true)
+  .addField(`:hammer: | **Uso**`, `\`${client.config.prefix}clima <cidade>\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${client.config.prefix}clima Rio de Janeiro\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`${c.prefix}tempo\``)
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))  

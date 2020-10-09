@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const c = require('../config.json')
 
 exports.run = async (bot, message, args) => {
 message.delete();
@@ -13,7 +12,7 @@ message.delete();
 
     let a2 = new Discord.MessageEmbed()
     .setDescription(`**Este canal foi bloqueado por ${message.author}**\n` +
-`Você pode finalizar o bloqueio digitando \`${c.prefix}unlock\` ou reagindo no cadeado.`)
+`Você pode finalizar o bloqueio digitando \`${client.config.prefix}unlock\` ou reagindo no cadeado.`)
 .setColor("#8500de")
 .setFooter(`${message.guild.name}`, message.guild.iconURL())
 .setTimestamp();

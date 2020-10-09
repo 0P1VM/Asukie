@@ -1,12 +1,11 @@
 const Discord = require("discord.js")
-const c = require('../config.json')
 
 module.exports.run = async (client, message, args) => {
 message.delete();
 
     let painel = new Discord.MessageEmbed()
     .setColor("#8500de") 
-    .setAuthor(`Asukie™ - ${c.v}`, client.user.displayAvatarURL({ dynamic:true }))
+    .setAuthor(`Asukie™ - ${client.config.v}`, client.user.displayAvatarURL({ dynamic:true }))
 	.setDescription(`\n**Links Importantes:\n` +
   `<:seta1:762492762192478216> [Me adicione em seu servidor](https://discord.com/api/oauth2/authorize?client_id=749044223692767302&permissions=8&scope=bot)\n` +
   `<:seta1:762492762192478216> [Vote em mim no top.gg](https://AlgoAqui.com)\n` +
@@ -29,7 +28,7 @@ message.delete();
       let administracao = new Discord.MessageEmbed()
 	 .setColor("#8500de") 
      .setAuthor('Administração', client.user.displayAvatarURL({ dynamic:true }))
-     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${c.prefix}\`\n` +
+     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${client.config.prefix}\`\n` +
 	 `\n<:setinha:763773726419583017> **Addemoji** - Adicione algum emoji dentro do servidor\n` +
 	 `<:setinha:763773726419583017> **Addcargo** - Adicione um cargo, em algum usuário.\n` +
 	 `<:setinha:763773726419583017> **Removecargo** - Retire um cargo de algum usuário.\n` +
@@ -51,7 +50,7 @@ message.delete();
       let moderacao = new Discord.MessageEmbed()
 	 .setColor("#8500de") 
      .setAuthor('Moderação', client.user.displayAvatarURL({ dynamic:true }))
-     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${c.prefix}\`\n` +
+     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${client.config.prefix}\`\n` +
 `\n<:setinha:763773726419583017> **Clear** - Limpe um chat de 2 a 100 mensagem.\n` +
 `<:setinha:763773726419583017> **Lock** - Tranque algum chat, para os membros não falar.\n` +
 `<:setinha:763773726419583017> **Unlock** - Destranque o chat que esteja trancado.\n` +
@@ -78,7 +77,7 @@ message.delete();
       let configuracao = new Discord.MessageEmbed()
      	 .setColor("#8500de") 
      .setAuthor('Configuração', client.user.displayAvatarURL({ dynamic:true }))
-     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${c.prefix}\`\n` +
+     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${client.config.prefix}\`\n` +
  `\n<:setinha:763773726419583017> **Defesa** - Deixe seu servidor muito mas seguro.\n` +
  `<:setinha:763773726419583017> **Autorole** - Ative autorole dos bots e membros.\n` +
  `<:setinha:763773726419583017> **Painel** - Veja o painel do servidor.\n` +
@@ -102,7 +101,7 @@ message.delete();
       let interacao = new Discord.MessageEmbed()
      	 .setColor("#8500de") 
      .setAuthor('Interação', client.user.displayAvatarURL({ dynamic:true }))
-     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${c.prefix}\`\n` +
+     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${client.config.prefix}\`\n` +
  `\n<:setinha:763773726419583017> **Cocegas** - Faça cócegas em algum amiguinho.\n` +
  `<:setinha:763773726419583017> **Primeiraspalavras** - Primeiras palavras de um bebê.\n` +
  `<:setinha:763773726419583017> **Say** - Escreva algo como se fosse a própria Asukie escrevendo.\n` +
@@ -110,18 +109,16 @@ message.delete();
  `<:setinha:763773726419583017> **Neko** - Veja melhores gifs de neko.\n` +
  `<:setinha:763773726419583017> **Ship** - Faça um ship de algum casal.\n` +
  `<:setinha:763773726419583017> **Cafune** - Faça um cafuné em algum amigo(a).\n` +
- `<:setinha:763773726419583017> **Covid** - Veja os casos de Covid no mundo inteiro.\n` +
  `<:setinha:763773726419583017> **Tapa** - De um tapa em alguém.\n` +
  `<:setinha:763773726419583017> **Mcskin** - É um comando pra você conseguir a skin de alguma conta do Minecraft.\n` +
  `<:setinha:763773726419583017> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` +                   
  `<:setinha:763773726419583017> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
  `<:setinha:763773726419583017> **Matar** - Mate alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Hackear** - "hackei" alguém. **(Leve o comando na zoeira)**\n` +
- `<:setinha:763773726419583017> **Ascii** - Escreva em modo Ascii.\n` +
+ 
  `<:setinha:763773726419583017> **Duvida** - Deixa eu tirar uma dúvida sua.\n` +
  `<:setinha:763773726419583017> **Hug** - De um abraço em algum amigo(a).\n` +                   
  `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                    
- `<:setinha:763773726419583017> **Bigtext** - Escreva com letras grandes.\n` +
  `<:setinha:763773726419583017> **Clima** - Veja o clima de alguma cidade.\n` +                   
  `<:setinha:763773726419583017> **Dado** - Jogue dado comigo.\n` +
  `<:setinha:763773726419583017> **Roletarussa** - Jogue roletarussa comigo.\n` +                   
@@ -141,12 +138,13 @@ message.delete();
       let utilidade = new Discord.MessageEmbed()
      	 .setColor("#8500de") 
      .setAuthor('Utilidade', client.user.displayAvatarURL({ dynamic:true }))
-     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${c.prefix}\`\n` +
-     `\n<:setinha:763773726419583017> **Div** - Ver quantas pessoas você recruto pra dentro do servidor.\n`+
+     .setDescription(`<a:gatinho_:763776921326190655>**・Prefixo:** \`${client.config.prefix}\`\n` +
      `<:setinha:763773726419583017> **Cpu** - Veja minhas configurações de cpu.\n`+
      `<:setinha:763773726419583017> **Avatar** - Veja seu avatar em um tamanho maior ou de outro membro.\n` +
      `<:setinha:763773726419583017> **Rankinvite** - Veja o rank de invite.\n` +
-     `<:setinha:763773726419583017> **Uptime** - Veja o tempo do bot online.\n` +
+     `<:setinha:763773726419583017> **Covid** - Veja os casos de covid pelo mundo, ou no seu Pais.\n` +
+     `<:setinha:763773726419583017> **Covidsin** - Veja os sinais do Covid19 e se cuide.\n` +
+     `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +
      `<:setinha:763773726419583017> **Botinfo** - Veja informações do bot toda.\n` +
      `<:setinha:763773726419583017> **Ping** - Veja a velocidade da mensagem do bot.\n` + 
      `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +

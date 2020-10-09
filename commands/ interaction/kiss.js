@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const superagent = require('superagent')
-const c = require('../config.json')
 
 exports.run = async (client, message, args) => {
   
@@ -13,7 +12,7 @@ message.delete();
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {
 return message.channel.send('<a:Bnao:746212123901820929> **|** Você está utilizando este comando de forma incorreta!\n' +
-`> **Exemplo:** ${c.prefix}kiss <@!749044223692767302>`);
+`> **Exemplo:** ${client.config.prefix}kiss <@!749044223692767302>`);
 }
 
 let avatar = message.author.displayAvatarURL({dynamic: true});

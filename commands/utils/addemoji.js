@@ -1,14 +1,13 @@
 const Discord = require('discord.js')
-const c = require('../config.json')
 
 exports.run = async (bot, message, args) => {
 
   if(!message.guild.me.hasPermission('MANAGE_EMOJIS')) return message.channel.send('<a:Bnao:746212123901820929> **|** Oops! eu não tenho a permissão de **MANAGE_EMOJIS**, portanto não posso executar esta ação!')
 
   if(!args[0]) return message.channel.send(`<a:Bnao:746212123901820929> | ${message.author} utilize o comando.\n` +
-	`> **Exemplo:** ${c.prefix}addemoji <nome> <url>`)
+	`> **Exemplo:** ${client.config.prefix}addemoji <nome> <url>`)
   if(!args[1]) return message.channel.send(`<a:Bnao:746212123901820929> | ${message.author} utilize o comando.\n` +
-	`> **Exemplo:** ${c.prefix}addemoji <nome> <url>`)
+	`> **Exemplo:** ${client.config.prefix}addemoji <nome> <url>`)
 
   if(!message.member.hasPermission('MANAGE_EMOJIS')) return message.channel.send(`<a:Bnao:746212123901820929> | Desculpe, ${message.author}. É necessário ter a permissão de **MANAGE_EMOJIS** para executar este comando!`)
 

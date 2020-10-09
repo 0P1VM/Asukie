@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const c = require('../config.json')
 
 module.exports.run = async(client, message, args) => {
   
@@ -7,8 +6,8 @@ module.exports.run = async(client, message, args) => {
   
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Escreva uma mensagem de saida*`)
-  .addField(`:hammer: | **Uso**`, `\`${c.prefix}ship <@user> <@user2>\``, true)
-  .addField(`:book: | **Exemplo**`, `\`${c.prefix}ship @Asukie @AsukieHomi\``, true)
+  .addField(`:hammer: | **Uso**`, `\`${client.config.prefix}ship <@user> <@user2>\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${client.config.prefix}ship @Asukie @AsukieHomi\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`Nenhuma\``)
   .setColor('#8500de')

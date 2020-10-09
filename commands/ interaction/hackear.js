@@ -1,5 +1,4 @@
 const Discord = require('discord.js'); 
-const c = require('../config.json')
 const time = ""
 
 exports.run = async (client, message, args) => { 
@@ -10,7 +9,7 @@ message.delete();
   if (membro === message.member) return message.channel.send(`<a:errado:753245066965024871> **|** Você não pode hackear você mesmo!`);
   if (!message.guild.me.hasPermission("EMBED_LINKS")) return message.channel.send(`<a:errado:753245066965024871> **|** Eu não tenho a permissão de **EMBED_LINKS**!`);
 
-    var exemplos = ["Quem é aquele admin gostoso? Arruma o zap dele pra mim ai", "Não vai dar... Precisamos terminar...", "Vamo GF? rs", "Queria uma lolizinha :(", "Vai com calma que é minha primeira vez tá?", "Traveco é mó gostoso", "Tudo bem, mas agora eu sou lesbica", "Você tá muito linda hoje", "Vontade de uébi namorar com você", "O cara me gravou gemendo, que doente!", "Te amo..."]; 
+    var exemplos = ["Quem é aquele admin gostoso? Arruma o zap dele pra mim ai", "Não vai dar... Precisamos terminar...", "Vamo GF? rs", "Queria uma lolizinha :(", "Vai com calma que é minha primeira vez tá?", "Traveco é mó gostoso", "Tudo bem, mas agora eu sou lesbica", "Você tá muito linda hoje", "Vontade de uébi namorar com você", "O cara me gravou gemendo, que doente!", "Te amo...", "Quero que minha ex vá toma %$#%#@"]; 
 	var conexao = ["São Paulo", "Bahia", "Amazonas", "Rio de Janeiro", "Russia", "Lisboa", "Brasília", "Salvador", "Pará", "Pernambuco", "Minas Gerais", "Rio Grande do Sul", "Paraíba"]; 
     var resultado = Math.floor((Math.random() * exemplos.length)); 
 	var resultado1 = Math.floor((Math.random() * conexao.length)); 

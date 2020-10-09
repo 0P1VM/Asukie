@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const c = require("../config.json")
 const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
@@ -15,7 +14,7 @@ exports.run = async (client, message, args) => {
         if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(`<a:Bnao:746212123901820929> | Desculpe, ${message.author}. É necessário ter a permissão de **BAN_MEMBERS** para executar este comando!`)
 	if(!message.guild.me.hasPermission("BAN_MEMBERS")) return message.channel.send(`<a:Bnao:746212123901820929> | Oops! eu não tenho a permissão de **BAN_MEMBERS**, portanto não posso executar esta ação!`)
 	if (!membro) return message.channel.send(`<a:Bnao:746212123901820929> | ${message.author} utilize o comando.\n` +
-	`> **Exemplo:** ${c.prefix}ban @usuario motivo`).then(m => {
+	`> **Exemplo:** ${client.config.prefix}ban @usuario motivo`).then(m => {
     m.delete({timeout : 9000})
   })
         if (membro === message.member) return message.channel.send(perm).then(m => {

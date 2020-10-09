@@ -2,7 +2,6 @@ const Discord = require("discord.js");
 const cpuStat = require("cpu-stat");
 const os = require('os')
 const moment = require("moment")
-const c = require('../config.json');
 moment.locale('pt-BR')
 
 exports.run = (client, message, args) => {
@@ -16,6 +15,7 @@ message.delete();
     var suporte = ('[Clique Aqui](https://discord.gg/QcuZDqv)')
     var dev = "<@!752954404986159275>"
     var dev1 = "<@!719944880800923690>"
+    var dev2 = "<@!638157424099852288>"
 
     let dias = 0; 
     let week = 0; 
@@ -55,7 +55,7 @@ message.delete();
    .setColor('#8500de')
    .setAuthor(`Painel de Informações`, client.user.displayAvatarURL())
    .setDescription(`Olá ${message.author} eu sou a ${client.user.username}, minha idade é um mistério para todos, mas já vi vários usuários criando hipóteses! Fui desenvolvido para ajudar em seu servidor, tenho sistemas de economia, moderação, entretenimento e segurança. Para saber mais sobre mim, olhe abaixo:`)
-   .addField(`<:it:761067994486800415> **| Informações Gerais:**`, `> Programadores: ${dev}, ${dev1}\n` +
+   .addField(`<:it:761067994486800415> **| Informações Gerais:**`, `> Programadores: ${dev}, ${dev1} & ${dev2}\n` +
    `> Data de criação: \`${moment(client.user.createdAt).format('LL')}\`\n` +
    `> Data de entrada: \`${moment(client.user.joinedAt).format('LL')}\``)
    .addField(`<:ets:761068291941990400> **| Estatísticas:**`, `> Servidores: \`${client.guilds.cache.size}\`\n` +

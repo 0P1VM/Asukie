@@ -1,5 +1,5 @@
 const Discord = require("discord.js");
-const c = require('../config.json');
+
 
 exports.run = (client, message, args) => {
     var infu = ('https://extremoz.rn.gov.br/wp-content/uploads/2019/10/info.png')
@@ -8,8 +8,8 @@ exports.run = (client, message, args) => {
 
   .setTitle(`INFORMAÇÃO`)
   .setDescription(`*Pergunte para mim, a mais sábia!*`)
-  .addField(`:hammer: | **Uso**`, `\`${c.prefix}duvida <dúvida>\``, true)
-  .addField(`:book: | **Exemplo**`, `\`${c.prefix}duvida Sou fofinha? :3\``, true)
+  .addField(`:hammer: | **Uso**`, `\`${client.config.prefix}duvida <dúvida>\``, true)
+  .addField(`:book: | **Exemplo**`, `\`${client.config.prefix}duvida Sou fofinha? :3\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .setColor('#8500de')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))

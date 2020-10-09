@@ -1,5 +1,4 @@
 const Discord = require('discord.js')
-const c = require('../config.json')
 
 
 exports.run = async (bot, message, args) => {
@@ -10,9 +9,9 @@ exports.run = async (bot, message, args) => {
 
     if(isNaN(clean)) return message.channel.send(`Digite um número de mensagens para apagar`)
  if (!message.author) return message.channel.send(`<a:errorx:753355949279936553> | ${message.author} utilize o comando.\n` +
-  `> **Exemplo**: ${c.prefix}clear <numero>`)
+  `> **Exemplo**: ${client.config.prefix}clear <numero>`)
     if (clean < 1 || clean > 200) return message.channel.send(`<a:errorx:753355949279936553> | ${message.author} utilize o comando.\n` +
-  `> **Exemplo**: ${c.prefix}clear <numero>`)
+  `> **Exemplo**: ${client.config.prefix}clear <numero>`)
 
     try { 
         message.channel.bulkDelete(clean)
