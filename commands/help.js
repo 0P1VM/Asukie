@@ -14,11 +14,11 @@ message.delete();
 	  .addField(`Opções:`, `**<a:um_:763772746386898964> | Administração | MANUTENÇÃO\n` +
     `<a:dois_:763772765412393010> | Moderação | MANUTENÇÃO\n` +
     `<a:tres_:763772976168304650> | Configuração | MANUTENÇÃO\n` +
-		`<a:quatro_:763773033415442523> | Interação\n` +
+		`<a:quatro_:763773033415442523> | Interação | MANUTENÇÃO\n` +
     `<a:cinco_:763773112995020860> | Utilidades | MANUTENÇÃO**`)
     .setFooter(`Página 0 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
 	.setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-.setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+.setImage('https://i.imgur.com/rYKyIXl.png')
 
      message.channel.send(painel).then(msg => {
        msg.react('763948077970489366').then(() => msg.react('763772746386898964')).then(() => msg.react('763772765412393010')).then(() => msg.react('763772976168304650')).then(() => msg.react('763773033415442523')).then(() => msg.react('763773112995020860'))
@@ -37,7 +37,7 @@ message.delete();
 	 `<:setinha:763773726419583017> **Votacao** - Faz uma votação no seu servidor(obs: use o comando no chat onde você irá fazer a votação.)`)
 	 .setFooter(`Página 1 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
 	 .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-   .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+   .setImage('https://i.imgur.com/rYKyIXl.png')
       coletor.on("collect", cp => {
 
       msg.edit(administracao)
@@ -65,7 +65,7 @@ message.delete();
 `<:setinha:763773726419583017> **Allunban** - Desbani todos os usuários banidos do seu servidor.`)
  .setFooter(`Página 2 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
  .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-  .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+  .setImage('https://i.imgur.com/rYKyIXl.png')
      coletor2.on("collect", cp => {
 
       msg.edit(moderacao)
@@ -89,7 +89,7 @@ message.delete();
  `<:setinha:763773726419583017> **Contador** - Coloque no mínimo 10 chats, onde o bot irá contar os membros do servidor todo.`)
   .setFooter(`Página 3 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
   .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-  .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+  .setImage('https://i.imgur.com/rYKyIXl.png')
       coletor3.on("collect", cp => {
 
       msg.edit(configuracao)
@@ -124,7 +124,7 @@ message.delete();
  `<:setinha:763773726419583017> **Baka** - Chame alguém de baka.`)
   .setFooter(`Página 4 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
   .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-  .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+  .setImage('https://i.imgur.com/rYKyIXl.png')
       coletor4.on("collect", cp => {
 
       msg.edit(interacao)
@@ -143,10 +143,11 @@ message.delete();
      `<:setinha:763773726419583017> **Avatar** - Veja seu avatar em um tamanho maior ou de outro membro.\n` +
      `<:setinha:763773726419583017> **Rankinvite** - Veja o rank de invite.\n` +
      `<:setinha:763773726419583017> **Covid** - Veja os casos do Covid-19 no mundo inteiro.\n` +
-     `<:setinha:763773726419583017> **Covidsin** - Veja os sintomas do Covid-19.\n` +                
+     `<:setinha:763773726419583017> **Covidsin** - Veja os sintomas do Covid-19.\n` +              
+     `<:setinha:763773726419583017> **Covidprev** - Veja algumas prevenções contra o Covid-19.\n` +                              
      `<:setinha:763773726419583017> **Uptime** - Veja o tempo do bot online.\n` +
+      `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                                    
      `<:setinha:763773726419583017> **Botinfo** - Veja informações do bot toda.\n` +
-     `<:setinha:763773726419583017> **Ping** - Veja a velocidade da mensagem do bot.\n` + 
      `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +
      `<:setinha:763773726419583017> **Serverinfo** - Veja as informações do servidor.\n` +
      `<:setinha:763773726419583017> **Userinfo** - Veja informações de algum usuário.\n` +
@@ -154,14 +155,14 @@ message.delete();
      `<:setinha:763773726419583017> **Emoji** - Veja algum emoji em um tamanho maior, pode ser de outros servidores também.`)
   .setFooter(`Página 5 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
   .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
-  .setImage('https://cdn.discordapp.com/attachments/760597034138075158/761697500515270706/windows_banner.png')
+  .setImage('https://i.imgur.com/rYKyIXl.png')
       coletor5.on("collect", cp => {
 
       msg.edit(utilidade)
      cp.users.remove(message.author.id)
      })
 
-     let ini = (reaction, usuario) => reaction.emoji.id === "762496132092788767" && usuario.id === message.author.id;
+     let ini = (reaction, usuario) => reaction.emoji.id === "763948077970489366" && usuario.id === message.author.id;
      let coletor6 = msg.createReactionCollector(ini);
       coletor6.on("collect", cp => {
 

@@ -21,7 +21,7 @@ module.exports = {
                 .addField('Recuperados', recovered)
                 .addField('Mortes', deaths)
                 .setColor('#8500de')
-                .setThumbnail('https://images.vexels.com/media/users/3/193288/isolated/preview/b2a7f2fa70e9452b2f4ae832c1b651a2-covid-19-washing-hands-icon-by-vexels.png')
+                .setThumbnail('https://newsinteractive.post-gazette.com/media/2020/03/coronavirus/covid19.png')
                 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
 
                 message.channel.send(embed)
@@ -40,7 +40,7 @@ module.exports = {
                 .addField('Recuperados', recovered)
                 .addField('Mortes', deaths)
                 .setColor('#8500de')
-                .setThumbnail('https://images.vexels.com/media/users/3/193288/isolated/preview/b2a7f2fa70e9452b2f4ae832c1b651a2-covid-19-washing-hands-icon-by-vexels.png')
+                .setThumbnail('https://newsinteractive.post-gazette.com/media/2020/03/coronavirus/covid19.png')
                 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
 
                 message.channel.send(embed)

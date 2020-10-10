@@ -14,7 +14,7 @@ exports.run = (client, message, args) => {
   .setColor('#8500de')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 
-    var replies = [ "Sim", "Não", "Talvez", "Quem sabe...", "Claro", "Se pá", "Jamais", "", "" ];
+    var replies = ["Sim", "Não", "Talvez", "Quem sabe...", "Claro", "Se pá", "Jamais", "Nunca", "óbvio", "Você sabe", "Sei lá", "Se você não sabe imagina eu"];
     var result = Math.floor((Math.random() * replies.length));
     
     var duvida = args.slice(0).join(" ");
@@ -22,6 +22,7 @@ exports.run = (client, message, args) => {
   
     let embed = new Discord.MessageEmbed()
     
+    .setDescription(`As respostas são aleatórias`)	
     .addField(`**Dúvida**`, `${duvida}`)
     .addField(`Resposta`, `${replies [result]}`)
     .setColor('#8500de')

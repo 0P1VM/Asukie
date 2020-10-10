@@ -65,7 +65,7 @@ client.on('message', message => {
 	let marcou = new Discord.MessageEmbed()
   .setTitle(`**<:duvida:762803797109506059> | Está perdido(a), ${message.author.username} ?**`)
 	.setDescription(
-	`**<:seta1:762492762192478216> Eu me chamo ${client.user.username} e sou um bot com várias funções, criado para ajudar o seu servidor! <a:brilho:761081098368581632>**\n` +
+	`**<:setinha:763773726419583017> Eu me chamo ${client.user.username} e sou um bot com várias funções, criado para ajudar o seu servidor! <a:brilho:761081098368581632>**\n` +
   ``)
 	.setThumbnail('https://cdn.discordapp.com/emojis/739200876752797697.png?v=1')
 	.addFields(

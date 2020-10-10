@@ -20,17 +20,125 @@ let avatar = message.author.displayAvatarURL({dynamic: true});
   const embed = new Discord.MessageEmbed()
         .setTitle('')
         .setColor('#8500de')
-        .setDescription(`<a:Borbo:761702886996312064> ${message.author} ** acaba de beijar** ${user}`)
+        .setDescription(`<a:Borbo:761702886996312064> ${message.author} **acabou de beijar** ${user}`)
         .setImage(body.url)
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   await message.channel.send(embed).then(msg => {
        msg.react('🔁')
 
-      let loop = (reaction, usuario) => reaction.emoji.id === "🔁" && usuario.id === message.author.id;
-      let coletor = msg.createReactionCollector(loop);
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor2 = msg.createReactionCollector(loop);
 
-           coletor.on("collect", cp => {
-             msg.channel.send(embed)
+           coletor2.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor3 = msg.createReactionCollector(loop);
+
+           coletor3.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor4 = msg.createReactionCollector(loop);
+
+           coletor4.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor5 = msg.createReactionCollector(loop);
+
+           coletor5.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor6 = msg.createReactionCollector(loop);
+
+           coletor6.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor7 = msg.createReactionCollector(loop);
+
+           coletor7.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor8 = msg.createReactionCollector(loop);
+
+           coletor8.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor9 = msg.createReactionCollector(loop);
+
+           coletor9.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor10 = msg.createReactionCollector(loop);
+
+           coletor10.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor11 = msg.createReactionCollector(loop);
+
+           coletor11.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor12 = msg.createReactionCollector(loop);
+
+           coletor12.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor13 = msg.createReactionCollector(loop);
+
+           coletor13.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor14 = msg.createReactionCollector(loop);
+
+           coletor14.on("collect", cp => {
+msg.channel.send(`${message.author} **| Esse é o meu limite!**`)
            })
-  })
+           })
+           })
+           })
+           })
+           })           
+           })
+           })
+           })
+           })
+           })           
+           })
+           })           
+           })
+           })
+           })
+           })
+           })           
+           })
+           })
+           })
+           })
+           })
+           })
+           })
+           })
 }

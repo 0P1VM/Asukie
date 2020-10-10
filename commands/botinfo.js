@@ -13,7 +13,7 @@ message.delete();
     var livraria = ('[Discord.js](https://discord.js.org/#/)')
     var host = ('[DisCloud](https://discloudbot.com/)')
     var adicioneeu = ('[Clique Aqui](https://discord.com/api/oauth2/authorize?client_id=749044223692767302&permissions=8&scope=bot)')
-    var suporte = ('[Clique Aqui](https://discord.gg/QcuZDqv)')
+    var suporte = ('[Clique Aqui](https://discord.gg/n5eNazJ)')
     var dev = "<@!752954404986159275>"
     var dev1 = "<@!719944880800923690>"
 
@@ -55,7 +55,7 @@ message.delete();
    .setColor('#8500de')
    .setAuthor(`Painel de Informações`, client.user.displayAvatarURL())
    .setDescription(`Olá ${message.author} eu sou a ${client.user.username}, minha idade é um mistério para todos, mas já vi vários usuários criando hipóteses! Fui desenvolvido para ajudar em seu servidor, tenho sistemas de economia, moderação, entretenimento e segurança. Para saber mais sobre mim, olhe abaixo:`)
-   .addField(`<:it:761067994486800415> **| Informações Gerais:**`, `> Programadores: ${dev}, ${dev1}\n` +
+   .addField(`<:it:761067994486800415> **| Informações Gerais:**`, `> Programadores: ${dev} & ${dev1}\n` +
    `> Data de criação: \`${moment(client.user.createdAt).format('LL')}\`\n` +
    `> Data de entrada: \`${moment(client.user.joinedAt).format('LL')}\``)
    .addField(`<:ets:761068291941990400> **| Estatísticas:**`, `> Servidores: \`${client.guilds.cache.size}\`\n` +
@@ -67,7 +67,8 @@ message.delete();
    `\n<:seta1:762492762192478216> **Me adicione: ${adicioneeu}**\n` +
    `<:seta1:762492762192478216> **Servidor Suporte: ${suporte}**`) 
    .setThumbnail(`https://media.discordapp.net/attachments/760597034138075158/761074283505385492/puzzel-bot-icon.png?width=480&height=480`) 
-   .setImage(`https://cdn.discordapp.com/attachments/760597034138075158/761697261788856320/22windows_banner.png`)
+   .setImage(`https://i.imgur.com/yCNblD0.png`)
+    .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
   
    message.channel.send(embed)
 

@@ -1,35 +1,144 @@
 const Discord = require('discord.js');
+const superagent = require('superagent')
+const c = require('../config.json')
 
-module.exports = {
-    name: 'cafune',
-    aliases: ['cafuné', 'cafune'],
-run: async (client, message, args) => {
+exports.run = async (client, message, args) => {
+  
+message.delete();
+ const {
+        body
+    } = await superagent
+        .get(`https://nekos.life/api/v2/img/pat`);
 
-  let erro = new Discord.MessageEmbed()
+let user = message.mentions.users.first() || client.users.cache.get(args[0]);
+if (!user) {
+return message.channel.send('<a:Bnao:746212123901820929> **|** Você está utilizando este comando de forma incorreta!\n' +
+`> **Exemplo:** ${c.prefix}cafune <@!749044223692767302>`);
+}
 
-    var list = [
-        'https://media.tenor.com/images/c5acf899741117647a56c80ad6f459ca/tenor.gif',
-        'https://pa1.narvii.com/6499/f1ce20af6c00673889174e90a15bcfbde72f5103_00.gif',
-        'https://media.tenor.com/images/c7192cc8ffa738690156fbb9334a8937/tenor.gif',
-        'https://media1.tenor.com/images/827ced08ea7958849c908c74d738f9b0/tenor.gif?itemid=16742458',
-        'https://media1.tenor.com/images/7a7d613610b4fa7d9e35f38a59001e6f/tenor.gif?itemid=7343376',
-        'https://media1.tenor.com/images/7a7d613610b4fa7d9e35f38a59001e6f/tenor.gif?itemid=7343376'
-      ];
-      
-      var rand = list[Math.floor(Math.random() * list.length)];
-      let user = message.mentions.users.first() || client.users.cache.get(args[0]);
-      if (!user) {
-      return message.reply('<a:errado:753245066965024871> **|** Mecione um usuário valido.');
-      }
-      /*
-      message.channel.send(`${message.author.username} **acaba de beijar** ${user.username}! :heart:`, {files: [rand]});
-      */
-      let avatar = message.author.displayAvatarURL({format: 'png'});
-        const embed = new Discord.MessageEmbed()
-              .setColor('#8500de')
-              .setDescription(`${message.author} acaba de fazer um cafuné em ${user} <:cafune:762803835546107916>`)
-              .setImage(rand)
-              .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-        await message.channel.send(embed);
-      }
-  }
+let avatar = message.author.displayAvatarURL({dynamic: true});
+  const embed = new Discord.MessageEmbed()
+        .setTitle('')
+        .setColor('#8500de')
+        .setDescription(`<:cafune:762803835546107916> ${message.author} **Fez cafuné em** ${user}`)
+        .setImage(body.url)
+        .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
+  await message.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor2 = msg.createReactionCollector(loop);
+
+           coletor2.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor3 = msg.createReactionCollector(loop);
+
+           coletor3.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor4 = msg.createReactionCollector(loop);
+
+           coletor4.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor5 = msg.createReactionCollector(loop);
+
+           coletor5.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor6 = msg.createReactionCollector(loop);
+
+           coletor6.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor7 = msg.createReactionCollector(loop);
+
+           coletor7.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor8 = msg.createReactionCollector(loop);
+
+           coletor8.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor9 = msg.createReactionCollector(loop);
+
+           coletor9.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor10 = msg.createReactionCollector(loop);
+
+           coletor10.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor11 = msg.createReactionCollector(loop);
+
+           coletor11.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor12 = msg.createReactionCollector(loop);
+
+           coletor12.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor13 = msg.createReactionCollector(loop);
+
+           coletor13.on("collect", cp => {
+msg.channel.send(embed).then(msg => {
+       msg.react('🔁')
+
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let coletor14 = msg.createReactionCollector(loop);
+
+           coletor14.on("collect", cp => {
+msg.channel.send(`${message.author} **| Esse é o meu limite!**`)
+           })
+           })
+           })
+           })
+           })
+           })           
+           })
+           })
+           })
+           })
+           })           
+           })
+           })           
+           })
+           })
+           })
+           })
+           })           
+           })
+           })
+           })
+           })
+           })
+           })
+           })
+           })
+}

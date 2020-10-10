@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 var Jimp = require("jimp")
 
-exports.run = async (bot, message, args) => {
+exports.run = async (client, message, args) => {
 
     if (message.content.split(' ').slice(1).join(' ').length < 1) {
         message.channel.send('<a:errado:753245066965024871> **|** Você não escreveu nada.')
