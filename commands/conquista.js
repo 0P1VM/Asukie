@@ -1,6 +1,6 @@
 const snekfetch = require('snekfetch');
 
-exports.run = async (bot, message, args) => {
+exports.run = async (client, message, args) => {
   let [title, contents] = args.join(" ").split("|");
   if (!contents) [title, contents] = ["Conquista desbloqueada!", title];
   let rnd = Math.floor((Math.random() * 39) + 1);

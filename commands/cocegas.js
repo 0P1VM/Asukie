@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const superagent = require('superagent')
 const c = require('../config.json')
-
 exports.run = async (client, message, args) => {
   
 message.delete();

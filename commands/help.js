@@ -111,13 +111,15 @@ message.delete();
  `<:setinha:763773726419583017> **Cafune** - Faça um cafuné em algum amigo(a).\n` +
  `<:setinha:763773726419583017> **Tapa** - De um tapa em alguém.\n` +
  `<:setinha:763773726419583017> **Mcskin** - É um comando pra você conseguir a skin de alguma conta do Minecraft.\n` +
- `<:setinha:763773726419583017> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` +                   
+ `<:setinha:763773726419583017> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` + 
+ `<:setinha:763773726419583017> **Deus** - Use o comando e veja oque deus nunca iria aceitar.\n` +
+ `<:setinha:763773726419583017> **Calc** - Calcule alguma conta de matemática.\n` +                    
+ `<:setinha:763773726419583017> **Japauau** - Use o comando e veja um programa japonês reagindo ao o que você escreveu.\n` +                     
  `<:setinha:763773726419583017> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
  `<:setinha:763773726419583017> **Matar** - Mate alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Hackear** - "hackei" alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Duvida** - Deixa eu tirar uma dúvida sua.\n` +
- `<:setinha:763773726419583017> **Hug** - De um abraço em algum amigo(a).\n` +                   
- `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                    
+ `<:setinha:763773726419583017> **Hug** - De um abraço em algum amigo(a).\n` +                                      
  `<:setinha:763773726419583017> **Clima** - Veja o clima de alguma cidade.\n` +                   
  `<:setinha:763773726419583017> **Dado** - Jogue dado comigo.\n` +
  `<:setinha:763773726419583017> **Roletarussa** - Jogue roletarussa comigo.\n` +                   
@@ -145,8 +147,7 @@ message.delete();
      `<:setinha:763773726419583017> **Covid** - Veja os casos do Covid-19 no mundo inteiro.\n` +
      `<:setinha:763773726419583017> **Covidsin** - Veja os sintomas do Covid-19.\n` +              
      `<:setinha:763773726419583017> **Covidprev** - Veja algumas prevenções contra o Covid-19.\n` +                              
-     `<:setinha:763773726419583017> **Uptime** - Veja o tempo do bot online.\n` +
-      `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                                    
+     `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                                    
      `<:setinha:763773726419583017> **Botinfo** - Veja informações do bot toda.\n` +
      `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +
      `<:setinha:763773726419583017> **Serverinfo** - Veja as informações do servidor.\n` +

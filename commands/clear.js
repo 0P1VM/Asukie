@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const c = require('../config.json')
 
 
-exports.run = async (bot, message, args) => {
+exports.run = async (client, message, args) => {
 
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send(`Você precisa da permissão de **GERENCIAR MENSAGENS** para executar este comando`); 
     if (!message.guild.me.hasPermission("MANAGE_MESSAGES")) return message.channel.send(`Eu não tenho permissão para apagar mensagens nesse servidor.`); 
