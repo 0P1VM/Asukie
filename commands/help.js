@@ -9,7 +9,7 @@ message.delete();
     .setAuthor(`Asukie™ - ${c.v}`, client.user.displayAvatarURL({ dynamic:true }))
 	.setDescription(`\n**Links Importantes:\n` +
   `<:seta1:762492762192478216> [Me adicione em seu servidor](https://discord.com/api/oauth2/authorize?client_id=749044223692767302&permissions=8&scope=bot)\n` +
-  `<:seta1:762492762192478216> [Vote em mim no top.gg](https://AlgoAqui.com)\n` +
+  `<:seta1:762492762192478216> [Vote em mim no top.gg](https://top.gg/bot/749044223692767302/edit)\n` +
   `<:seta1:762492762192478216> [Meu servidor de suporte](https://discord.gg/n5eNazJ)**`)
 	  .addField(`Opções:`, `**<a:um_:763772746386898964> | Administração | MANUTENÇÃO\n` +
     `<a:dois_:763772765412393010> | Moderação | MANUTENÇÃO\n` +
@@ -143,7 +143,6 @@ message.delete();
      `\n<:setinha:763773726419583017> **Div** - Ver quantas pessoas você recruto pra dentro do servidor.\n`+
      `<:setinha:763773726419583017> **Cpu** - Veja minhas configurações de cpu.\n`+
      `<:setinha:763773726419583017> **Avatar** - Veja seu avatar em um tamanho maior ou de outro membro.\n` +
-     `<:setinha:763773726419583017> **Rankinvite** - Veja o rank de invite.\n` +
      `<:setinha:763773726419583017> **Covid** - Veja os casos do Covid-19 no mundo inteiro.\n` +
      `<:setinha:763773726419583017> **Covidsin** - Veja os sintomas do Covid-19.\n` +              
      `<:setinha:763773726419583017> **Covidprev** - Veja algumas prevenções contra o Covid-19.\n` +                              

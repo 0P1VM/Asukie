@@ -9,7 +9,6 @@ message.delete();
         body
     } = await superagent
         .get(`https://nekos.life/api/v2/img/slap`);
-
 let user = message.mentions.users.first() || client.users.cache.get(args[0]);
 if (!user) {
 return message.channel.send('<a:Bnao:746212123901820929> **|** Você está utilizando este comando de forma incorreta!\n' +
@@ -17,6 +16,12 @@ return message.channel.send('<a:Bnao:746212123901820929> **|** Você está utili
 }
 
 let avatar = message.author.displayAvatarURL({dynamic: true});
+  const embe = new Discord.MessageEmbed()
+        .setTitle('')
+        .setColor('#8500de')
+        .setDescription(`<a:tapa:762706444226396168> ${user} **deu um tapa em** ${message.author}`)
+        .setImage(body.url)
+        .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   const embed = new Discord.MessageEmbed()
         .setTitle('')
         .setColor('#8500de')
@@ -26,14 +31,14 @@ let avatar = message.author.displayAvatarURL({dynamic: true});
   await message.channel.send(embed).then(msg => {
        msg.react('🔁')
 
-      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === user.id;
       let coletor2 = msg.createReactionCollector(loop);
 
            coletor2.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
-      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
+      let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && user.id === message.author.id;
       let coletor3 = msg.createReactionCollector(loop);
 
            coletor3.on("collect", cp => {
@@ -44,7 +49,7 @@ msg.channel.send(embed).then(msg => {
       let coletor4 = msg.createReactionCollector(loop);
 
            coletor4.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
       let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
@@ -58,7 +63,7 @@ msg.channel.send(embed).then(msg => {
       let coletor6 = msg.createReactionCollector(loop);
 
            coletor6.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
       let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
@@ -72,7 +77,7 @@ msg.channel.send(embed).then(msg => {
       let coletor8 = msg.createReactionCollector(loop);
 
            coletor8.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
       let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
@@ -86,7 +91,7 @@ msg.channel.send(embed).then(msg => {
       let coletor10 = msg.createReactionCollector(loop);
 
            coletor10.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
       let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
@@ -100,7 +105,7 @@ msg.channel.send(embed).then(msg => {
       let coletor12 = msg.createReactionCollector(loop);
 
            coletor12.on("collect", cp => {
-msg.channel.send(embed).then(msg => {
+msg.channel.send(embe).then(msg => {
        msg.react('🔁')
 
       let loop = (reaction, usuario) => reaction.emoji.name === "🔁" && usuario.id === message.author.id;
