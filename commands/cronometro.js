@@ -28,7 +28,7 @@ exports.run = async (client, message, args) => {
   message.channel.send(":alarm_clock: **|** Irei te chamar em: " + `\`${ms(ms(Timer), {long: true})}\``)
 
   setTimeout(function(){
-    message.channel.send(`<a:atencao:754000212128956546> | BIP BIP BIP! acabou o tempo ${message.author}`)
+    message.channel.send(`<a:aviso:758897403277082654> **|** BIP BIP BIP! acabou o tempo ${message.author}`)
 
   }, ms(Timer));
 }
