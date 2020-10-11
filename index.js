@@ -20,9 +20,8 @@ client.on("message", message => {
 
 
 const noo = new Discord.MessageEmbed()
-.setDescription(`<a:errado:753245066965024871> **|** ${message.author}, Eu não encontrei o comando "**${args}**" Digite **${config.prefix}ajuda** para obter ajuda.`)
+.setDescription(`<a:aviso:758897403277082654> **|** ${message.author}, O comando não existe ou se encontra em manutenção.`)
 .setColor("#8500de")
-.setFooter('A maioria dos comandos estão em manutenção.')
   const command = args.shift().toLowerCase();
 
   try {
