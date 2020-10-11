@@ -20,7 +20,7 @@ client.on("message", message => {
 
 
 const noo = new Discord.MessageEmbed()
-.setDescription(`<a:aviso:758897403277082654> **|** ${message.author}, O comando não existe ou se encontra em manutenção.`)
+.setDescription(`<a:aviso:758897403277082654> **|** ${message.author}, O comando não existe, utilize \`${config.prefix}ajuda\`.`)
 .setColor("#8500de")
   const command = args.shift().toLowerCase();
 

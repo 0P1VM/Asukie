@@ -1,9 +1,28 @@
 const Discord = require('discord.js');
+const db = require('quick.db')
 
 module.exports = {
     name: 'kill',
     aliases: ['matar', 'morrer'],
 run: async (client, message, args) => {
+message.delete();
+
+var manutenção = await db.get(`manutenção`)
+  
+    if(!manutenção === true){
+
+    let mnt = new Discord.MessageEmbed()
+
+.setDescription(`**Olá, ${message.author}**\n` +
+                `\nNo momento fui enviada para outra galáxia\n` + 
+				`Em breve voltarei a responder por seus comandos.`)
+.setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
+.setColor(`#8500de`)
+      
+     return message.channel.send(mnt)
+      
+    } 
+
     var list = [
         'https://25.media.tumblr.com/61dacc6fa9fc1aaabb5224ed8341e760/tumblr_mt8tygAVwT1sayl13o1_500.gif',
         'https://78.media.tumblr.com/d0bb21ba12720d57a19b127ea2c84856/tumblr_n90q272eto1sijhkdo1_500.gif',

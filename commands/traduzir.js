@@ -1,5 +1,6 @@
  const translate = require('@vitalets/google-translate-api');
 const Discord = require('discord.js');
+const db = require('quick.db')
 let langs = {
     'auto': 'Automatic',
     'af': 'Afrikaans',
@@ -109,6 +110,23 @@ let langs = {
     'zu': 'Zulu'
 }
  exports.run = async (client, message, args) => {
+message.delete();
+
+var manutenção = await db.get(`manutenção`)
+  
+    if(!manutenção === true){
+
+    let mnt = new Discord.MessageEmbed()
+
+.setDescription(`**Olá, ${message.author}**\n` +
+                `\nNo momento fui enviada para outra galáxia\n` + 
+				`Em breve voltarei a responder por seus comandos.`)
+.setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
+.setColor(`#8500de`)
+      
+     return message.channel.send(mnt)
+      
+    } 
  
   if (!args[0]) {
     return message.channel.send(`<a:errado:753245066965024871> **|** Você está usando de uma forma errada!! **ex:** \`a!traduzir pt en oi\` caso queira ver todos as linguas que a Asukie traduz só entrar nesse **link:** https://pastebin.com/kzQquhFf`)

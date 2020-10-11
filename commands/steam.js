@@ -1,8 +1,26 @@
  const Discord = require('discord.js');
 var steam = require('steam-provider') //npm i steam-provider
 var provider = new steam.SteamProvider();
+const db = require('quick.db')
 
-exports.run = (client, message, args) => {
+exports.run = async(client, message, args) => {
+message.delete();
+
+var manutenção = await db.get(`manutenção`)
+  
+    if(!manutenção === true){
+
+    let mnt = new Discord.MessageEmbed()
+
+.setDescription(`**Olá, ${message.author}**\n` +
+                `\nNo momento fui enviada para outra galáxia\n` + 
+				`Em breve voltarei a responder por seus comandos.`)
+.setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
+.setColor(`#8500de`)
+      
+     return message.channel.send(mnt)
+      
+    } 
  
 let arg = args.join(' ') //Puxa os argumentos do  usuário
 if(!arg) return message.channel.send(`<a:errado:753245066965024871> **|** ${message.author}, você precisa colocar um jogo!`) //retorna quando o usuário não coloca um jogo

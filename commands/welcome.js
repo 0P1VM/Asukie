@@ -3,6 +3,23 @@ const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
  if(message.deletable) message.delete();
+
+var manutenção = await db.get(`manutenção`)
+  
+    if(!manutenção === true){
+
+    let mnt = new Discord.MessageEmbed()
+
+.setDescription(`**Olá, ${message.author}**\n` +
+                `\nNo momento fui enviada para outra galáxia\n` + 
+				`Em breve voltarei a responder por seus comandos.`)
+.setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
+.setColor(`#8500de`)
+      
+     return message.channel.send(mnt)
+      
+    } 
+
 let status = db.get(`status_${message.guild.id}`)
   if(status === null) status = (`**<:desativo:761041461676081173> Desativado**`)
 

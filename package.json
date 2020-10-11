@@ -26,7 +26,6 @@
     "number-words": "^1.1.1",
     "numbertowords": "^0.0.16",
     "os": "^0.1.1",
-    "quick.db": "^7.1.2",
     "random-puppy": "^1.1.0",
     "request": "^2.88.2",
     "snekfetch": "^4.0.4",
@@ -38,7 +37,9 @@
     "leagueapi": "^0.4.21",
     "leaguejs": "^2.1.3",
     "@vitalets/google-translate-api": "^4.0.0",
-    "steam-provider": "^0.2.0"
+    "steam-provider": "^0.2.0",
+    "parse-ms": "^2.1.0",
+    "quick.db": "^7.1.2"
   },
   "engines": {
     "node": "12.x"
