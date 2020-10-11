@@ -38,6 +38,10 @@ exports.run = async (client, message, args) => {
     return message.channel.send(perm).then(m => {
       m.delete({ timeout: 9000 });
     });
+  if (membro === message.guild.owner)
+    return message.reply('Você não pode banir o usuário com a posse do servidor, bobinho.').then(m => {
+      m.delete({ timeout: 9000 });
+    });
 
   var motivo = args.slice(1).join(" ");
   if (!motivo) motivo = "Motivo não inserido";

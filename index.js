@@ -13,11 +13,16 @@ client.on("message", message => {
     message.content.startsWith(`<@!${client.user.id}>`)
   )
     return;
-
   const args = message.content
     .trim()
     .slice(config.prefix.length)
     .split(/ +/g);
+
+
+const noo = new Discord.MessageEmbed()
+.setDescription(`<a:errado:753245066965024871> **|** ${message.author}, Eu não encontrei o comando "**${args}**" Digite **${config.prefix}ajuda** para obter ajuda.`)
+.setColor("#8500de")
+.setFooter('A maioria dos comandos estão em manutenção.')
   const command = args.shift().toLowerCase();
 
   try {
@@ -26,6 +31,7 @@ client.on("message", message => {
   } catch (err) {
     console.error(err);
     message.delete();
+message.channel.send(noo)
   }
 })
 
@@ -43,7 +49,7 @@ var tabela = [
 		url: "https://www.twitch.tv/asukie"
 	},
 	{
-		name: `em ${client.guilds.cache.size} servidores 💙`,
+		name: `alegria em ${client.guilds.cache.size} servidores 💙`,
 		type: "STREAMING",
 		url: "https://www.twitch.tv/asukie"
 	},

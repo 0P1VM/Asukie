@@ -1,7 +1,7 @@
 const Discord = require('discord.js')
 const c = require('../config.json')
 
-exports.run = async (bot, message, args) => {
+exports.run = async (client, message, args) => {
 
   if(!message.guild.me.hasPermission('MANAGE_EMOJIS')) return message.channel.send('<a:Bnao:746212123901820929> **|** Oops! eu não tenho a permissão de **MANAGE_EMOJIS**, portanto não posso executar esta ação!')
 

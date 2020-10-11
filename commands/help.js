@@ -114,7 +114,8 @@ message.delete();
  `<:setinha:763773726419583017> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` + 
  `<:setinha:763773726419583017> **Deus** - Use o comando e veja oque deus nunca iria aceitar.\n` +
  `<:setinha:763773726419583017> **Calc** - Calcule alguma conta de matemática.\n` +                    
- `<:setinha:763773726419583017> **Japauau** - Use o comando e veja um programa japonês reagindo ao o que você escreveu.\n` +                     
+ `<:setinha:763773726419583017> **Japauau** - Use o comando e veja um programa japonês reagindo ao o que você escreveu.\n` +
+ `<:setinha:763773726419583017> **Hipocrisia** - Escreva algo pra aparecer no meme do "Enfim a hipocrisia".\n` +                    
  `<:setinha:763773726419583017> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
  `<:setinha:763773726419583017> **Matar** - Mate alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Hackear** - "hackei" alguém. **(Leve o comando na zoeira)**\n` +
@@ -148,6 +149,9 @@ message.delete();
      `<:setinha:763773726419583017> **Covidprev** - Veja algumas prevenções contra o Covid-19.\n` +                              
      `<:setinha:763773726419583017> **Cronometro** - Irei cronometrar um tempo pra você.\n` +                                    
      `<:setinha:763773726419583017> **Botinfo** - Veja informações do bot toda.\n` +
+     `<:setinha:763773726419583017> **Traduzir** - Traduza algum texto com facilidade e rapidez.\n` +                
+     `<:setinha:763773726419583017> **Steam** - Veja as informações do seu jogo preferido da plataforma Steam.\n` +
+     `<:setinha:763773726419583017> **Latencia** - Veja a latência da Asukie.\n` +                
      `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +
      `<:setinha:763773726419583017> **Serverinfo** - Veja as informações do servidor.\n` +
      `<:setinha:763773726419583017> **Userinfo** - Veja informações de algum usuário.\n` +
