@@ -17,7 +17,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -42,7 +42,7 @@ var manutenção = await db.get(`manutenção`)
       
       let avatar = message.author.displayAvatarURL({format: 'png'});
         const embed = new Discord.MessageEmbed()
-              .setColor('#8500de')
+              .setColor('#0f4bff')
               .setDescription(`${message.author} **acaba de matar** ${user} <:ceifa:758340166229557302>`)
               .setImage(rand)
               .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))

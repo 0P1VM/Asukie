@@ -7,11 +7,11 @@ message.delete();
 
     let embedDev = new MessageEmbed()
     .setDescription("<a:errado:753245066965024871> **|** Apenas meus desenvolvedores podem utilizar este comando!")
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
     let embedDev1 = new MessageEmbed()
     .setDescription(`**Me informe o status para a manutenção.**\n` +
 	`\n**Váriaveis:** \`${c.prefix}manutencao on\` **/** \`${c.prefix}manutencao off\``)
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
     if(!args[0]) return message.channel.send(embedDev1)
     
     if (!['752954404986159275', '719944880800923690'].includes(message.author.id)) {
@@ -27,7 +27,7 @@ message.delete();
 .setDescription(`<:b_offline2:753979547279687801> **|** Manutenção Desativada\n` + 
                 `\n<:seta1:762492762192478216> Para ativar a manutenção, utilize \`${c.prefix}manutencao on\``)
 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
             db.set(`manutenção`, true)
             
             message.channel.send(embedon)
@@ -39,7 +39,7 @@ message.delete();
 .setDescription(`<:online:753979848883568720> **|** Manutenção Ativada\n` + 
                 `\n<:seta1:762492762192478216> Para desativar a manutenção, utilize \`${c.prefix}manutencao off\``)
 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
 
             db.set(`manutenção`, null)
 

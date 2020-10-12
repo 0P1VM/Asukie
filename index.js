@@ -21,7 +21,7 @@ client.on("message", message => {
 
 const noo = new Discord.MessageEmbed()
 .setDescription(`<a:aviso:758897403277082654> **|** ${message.author}, O comando não existe, utilize \`${config.prefix}ajuda\`.`)
-.setColor("#8500de")
+.setColor("#0f4bff")
   const command = args.shift().toLowerCase();
 
   try {
@@ -78,7 +78,7 @@ client.on('message', message => {
   { name: `<a:aviso:758897403277082654> **| Comando de ajuda:**`, value: `ㅤ\`${config.prefix}help\``, inline: true },
 		)
 		.setFooter(`${client.user.username}`, client.user.displayAvatarURL({dynamic: true}))
-		.setColor(`#8500de`)
+		.setColor(`#0f4bff`)
 		.setTimestamp();
 	
    if(message.content.startsWith(`<@!${client.user.id}>`) || message.content.startsWith(`<@${client.user.id}>`))

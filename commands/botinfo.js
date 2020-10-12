@@ -19,7 +19,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -69,7 +69,7 @@ var manutenção = await db.get(`manutenção`)
 
     let embed = new Discord.MessageEmbed()
 
-   .setColor('#8500de')
+   .setColor('#0f4bff')
    .setAuthor(`Painel de Informações`, client.user.displayAvatarURL())
    .setDescription(`Olá ${message.author} eu sou a ${client.user.username}, minha idade é um mistério para todos, mas já vi vários usuários criando hipóteses! Fui desenvolvido para ajudar em seu servidor, tenho sistemas de economia, moderação, entretenimento e segurança. Para saber mais sobre mim, olhe abaixo:`)
    .addField(`<:it:761067994486800415> **| Informações Gerais:**`, `> Programadores: ${dev} & ${dev1}\n` +
@@ -78,11 +78,11 @@ var manutenção = await db.get(`manutenção`)
    .addField(`<:ets:761068291941990400> **| Estatísticas:**`, `> Servidores: \`${client.guilds.cache.size}\`\n` +
    `> Total de canais: \`${client.channels.cache.size}\`\n` +
    `> Quantia de usuários: \`${client.users.cache.size}\``)
-   .addField(`<:pgm:761068488424161351> **| Informações Técnicas:**`, `<:seta1:762492762192478216> Linguagem: **${linguagem}**\n` +
-   `<:seta1:762492762192478216> Hospedagem: **${host}**\n` +
-   `<:seta1:762492762192478216> Documentação: **${livraria}**\n` +
-   `\n<:seta1:762492762192478216> **Me adicione: ${adicioneeu}**\n` +
-   `<:seta1:762492762192478216> **Servidor Suporte: ${suporte}**`) 
+   .addField(`<:pgm:761068488424161351> **| Informações Técnicas:**`, `<:BlueSeta_:765293754637877268> Linguagem: **${linguagem}**\n` +
+   `<:BlueSeta_:765293754637877268> Hospedagem: **${host}**\n` +
+   `<:BlueSeta_:765293754637877268> Documentação: **${livraria}**\n` +
+   `\n<:BlueSeta_:765293754637877268> **Me adicione: ${adicioneeu}**\n` +
+   `<:BlueSeta_:765293754637877268> **Servidor Suporte: ${suporte}**`) 
    .setThumbnail(`https://media.discordapp.net/attachments/760597034138075158/761074283505385492/puzzel-bot-icon.png?width=480&height=480`) 
    .setImage(`https://i.imgur.com/yCNblD0.png`)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))

@@ -14,7 +14,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -33,13 +33,13 @@ let status2 = db.get(`status2_${message.guild.id}`)
 
     if(defc === null) defc = (`Atualmente Nenhum.`)
     let a1 = new Discord.MessageEmbed()
-    .setColor('#8500de')
+    .setColor('#0f4bff')
     .setDescription('<a:errado:753245066965024871> **|** Você precisa ter a permissão de gerenciar servidor para fazer isso.')
 
     if(!message.member.hasPermission('MANAGE_GUILD')) return message.channel.send(a1)
 
     let embedConfig = new Discord.MessageEmbed()
-    .setColor('#8500de')
+    .setColor('#0f4bff')
     .setTitle('**Sistemas de log(Entrada/Saída) - Asukie™**')
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .setDescription(`Olá, ${message.author}!\n` +
@@ -60,12 +60,12 @@ let status2 = db.get(`status2_${message.guild.id}`)
 
 
         let embedT = new Discord.MessageEmbed()
-        .setColor("#8500de") 
+        .setColor("#0f4bff") 
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
         .setDescription(`**<:textchat:761818574859010109> **|** Digite o tempo em que a mensagem será deletada automaticamente.**\n` +
 `> **Exemplo:** \`30 segundos\` ou \`2 minutos\``)
         let embedL = new Discord.MessageEmbed()
-        .setColor("#8500de") 
+        .setColor("#0f4bff") 
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
         .setDescription(`**<:textchat:761818574859010109> **|** Digite uma nova mensagem de entrada.\n` +
                        `Variáveis:** \`{usuario}\` e \`{servidor}\``)

@@ -122,7 +122,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -136,7 +136,7 @@ var manutenção = await db.get(`manutenção`)
   translate(msg, { from: args[0], to: args[1] }).then(res => {
      let embed = new Discord.MessageEmbed()
       .setTitle(`Asukie Tradutor`)
-      .setColor('#8500de')
+      .setColor('#0f4bff')
       .setThumbnail('https://static.apkthing.com/uploads/posts/2015-01/1421472148_google-translate12.png')
       .setDescription(`Texto traduzido de: ` + "`" + `${langs[args[0]]}` + "`" + " para " + "`" + `${langs[args[1]]}` + "`")
       .addField('Texto enviado:', msg)

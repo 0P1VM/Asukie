@@ -16,7 +16,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -34,7 +34,7 @@ var manutenção = await db.get(`manutenção`)
      const serverinfo = new Discord.MessageEmbed()
      .setAuthor(`${message.guild.name}`, message.guild.iconURL({dynamic: true}))
      .setThumbnail(message.guild.iconURL({dynamic: true}))
-     .setColor("#8500de")
+     .setColor("#0f4bff")
      .addFields(
     { name: `<:it:761067994486800415> ID do servidor:`, value: `${message.guild.id}`, inline: true },
     { name: `<:posse_Asukie:761376248865095700> Posse:`, value: `\`${message.guild.owner.user.tag}\`\n` +

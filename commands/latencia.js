@@ -14,22 +14,20 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
     } 
 
     let embed = new Discord.MessageEmbed() // Aqui vai ser a primeira embed que o bot irá mostrar
-    .setColor('#8500de')
-    .setThumbnail('https://cdn.discordapp.com/attachments/759155689733226517/764875696710615130/asukieLatencia.png')
+    .setColor('#0f4bff')
     .setDescription(`<a:loading:753391174202425364>  Calculando... \`1/2\`\n`)
     .addField("Aguarde","Aguarde alguns segundos. <:Asukie_Blindao:764726364775251968>")
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 
     let embed2 = new Discord.MessageEmbed() // Aqui vai ser a segunda embed que o bot irá mostrar
-    .setColor('#8500de')
-    .setThumbnail('https://cdn.discordapp.com/attachments/759155689733226517/764875696710615130/asukieLatencia.png')
+    .setColor('#0f4bff')
     .setDescription(`<a:loading:753391174202425364>  Calculando... \`2/2\``)
     .addField("Aguarde","Aguarde alguns segundos. <:Asukie_Blindao:764726364775251968>")
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
@@ -37,8 +35,7 @@ var manutenção = await db.get(`manutenção`)
     const m = await message.channel.send(`Ping?`)
     .then(botmsg => botmsg.delete({ timeout: 1}))
     let embed_ping = new Discord.MessageEmbed() // Aqui vai ser a terceira embed que o bot irá mostrar
-    .setColor('#8500de')
-    .setThumbnail('https://cdn.discordapp.com/attachments/759155689733226517/764875696710615130/asukieLatencia.png')
+    .setColor('#0f4bff')
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .addField(` Latência`,[
         `\`${m.createdTimestamp - message.createdTimestamp}\` ms`])

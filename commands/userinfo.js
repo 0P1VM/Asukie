@@ -17,7 +17,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -34,7 +34,7 @@ const alvo = message.mentions.users.first() || message.author
 const joinDiscord = moment(membro.createdAt).format('llll');
 const joinServer = moment(membro.joinedAt).format('llll');
 let userinfo = new Discord.MessageEmbed()
-.setColor('#8500de')
+.setColor('#0f4bff')
 .setAuthor('Asukie™', 'https://images-ext-1.discordapp.net/external/V2KiK_UQ9rHOl6-78oDKWTC1XsYOy_qQR5tjojlUxng/%3Fv%3D1/https/cdn.discordapp.com/emojis/760949427648725022.gif')
 .addFields(
 { name: `Tag do Discord:`, value: `\`${membro.user.tag}\``, inline: true},

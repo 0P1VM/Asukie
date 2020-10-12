@@ -15,7 +15,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -25,7 +25,7 @@ var manutenção = await db.get(`manutenção`)
     .setDescription(
       `<a:Bnao:746212123901820929> **|** Você não tem permissão para banir este usuário.`
     )
-    .setColor(`#8500de`)
+    .setColor(`#0f4bff`)
     .setFooter(
       `Requisitado: ${message.author.username}`,
       message.author.displayAvatarURL({ dynamic: true })
@@ -75,7 +75,7 @@ var manutenção = await db.get(`manutenção`)
       `<:notepad:735956294854377603> **| Motivo inserido:**`,
       `ㅤ${motivo}`
     )
-    .setColor(`#8500de`)
+    .setColor(`#0f4bff`)
     .setFooter(
       `Requisitado: ${message.author.username}`,
       message.author.displayAvatarURL({ dynamic: true })
@@ -145,7 +145,7 @@ var manutenção = await db.get(`manutenção`)
         value: `ㅤ${motivo}`
       }
     )
-    .setColor(`#8500de`);
+    .setColor(`#0f4bff`);
   let banido = new Discord.MessageEmbed()
     .setTitle(`Sistema de Punições | Asukie™`)
     .setColor(`#8500de`)

@@ -15,7 +15,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -33,7 +33,7 @@ var manutenção = await db.get(`manutenção`)
   .addField("<:ets:761068291941990400> **|** Modelo", `\`${os.cpus().map(i => `${i.model}`)[0]}\``)
   .addField("<:Config:762500381560799252> **|** Uso", `\`${percent.toFixed(2)}%\``)
   .addField("<:Memoria:762489519940960287> **|** Memória Utilizada", `\`${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}\` / \`${(os.totalmem() / 1024 / 1024).toFixed(2)} MB\``)
-  .setColor('#8500de')
+  .setColor('#0f4bff')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   
   message.channel.send(embed)

@@ -15,7 +15,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -31,14 +31,14 @@ var manutenção = await db.get(`manutenção`)
     let a2 = new Discord.MessageEmbed()
     .setDescription(`**Este canal foi bloqueado por ${message.author}**\n` +
 `Você pode finalizar o bloqueio digitando \`${c.prefix}unlock\` ou reagindo no cadeado.`)
-.setColor("#8500de")
+.setColor("#0f4bff")
 .setFooter(`${message.guild.name}`, message.guild.iconURL())
 .setTimestamp();
 
     let a3 = new Discord.MessageEmbed()
 
 .setDescription(`**Este canal foi desbloqueado por ${message.author}.**`)
-.setColor("#8500de")
+.setColor("#0f4bff")
 .setFooter(`${message.guild.name}`, message.guild.iconURL())
 .setTimestamp();
     message.channel.updateOverwrite(message.guild.roles.everyone, {SEND_MESSAGES: false})

@@ -15,7 +15,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -29,7 +29,7 @@ var manutenção = await db.get(`manutenção`)
   .addField(`:book: | **Exemplo**`, `\`${c.prefix}ship @Asukie @AsukieHomi\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`Nenhuma\``)
-  .setColor('#8500de')
+  .setColor('#0f4bff')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
   
     const love = [
@@ -55,7 +55,7 @@ var manutenção = await db.get(`manutenção`)
                         var embed = new Discord.MessageEmbed()
                                 .setThumbnail("https://media.discordapp.net/attachments/427168044528173056/436659295598280725/meterheart.png?width=344&height=344")
                                 .setDescription(" " + " " + "       __**:heartbeat::bow_and_arrow: MATCHMAKING :bow_and_arrow::heartbeat:**__" + "" + `\n\n          ` + user.username + "" + "" + "\n + \n" + user2.username + "" + "\n\n" + love[Math.floor(Math.random() * love.length)])
-                                .setColor('#8500de')
+                                .setColor('#0f4bff')
                                 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
                                 
                                 message.channel.send(embed)

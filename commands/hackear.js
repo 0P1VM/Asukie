@@ -16,7 +16,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -35,7 +35,7 @@ var manutenção = await db.get(`manutenção`)
     let espere = new Discord.MessageEmbed()
     .setDescription(`<a:hackerman:761838986976034827> Entrando em conexão com o servidor... \`(1/2)\``)	
 	.setImage(`https://www.imperva.com/blog/wp-content/uploads/sites/9/2016/12/ddos-spoffed-ips.gif`)
-   .setColor('#8500de')
+   .setColor('#0f4bff')
 	
 	let espere1 = new Discord.MessageEmbed()
     .setDescription(`<a:hackerman:761838986976034827> Invadindo o sistema... \`(2/2)\``)	
@@ -43,7 +43,7 @@ var manutenção = await db.get(`manutenção`)
   
     let embed = new Discord.MessageEmbed()
     .setAuthor(`Anonymous Hacking`, 'https://media.discordapp.net/attachments/670860111958376470/726250391380951040/9879_hackerman.gif')
-    .setColor('#8500de')
+    .setColor('#0f4bff')
     .addFields(
 	{ name: `Última Mensagem:`, value: `\`${exemplos [resultado]}\``, inline: true },
 	{ name: `Última Conexão com o Discord:`, value: `\`${conexao [resultado1]}\``, inline: true},

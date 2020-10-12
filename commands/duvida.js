@@ -13,7 +13,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -28,7 +28,7 @@ var manutenção = await db.get(`manutenção`)
   .addField(`:hammer: | **Uso**`, `\`${c.prefix}duvida <dúvida>\``, true)
   .addField(`:book: | **Exemplo**`, `\`${c.prefix}duvida Sou fofinha? :3\``, true)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
-  .setColor('#8500de')
+  .setColor('#0f4bff')
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 
     var replies = ["Sim", "Não", "Talvez", "Quem sabe...", "Claro", "Se pá", "Jamais", "Nunca", "óbvio", "Você sabe", "Sei lá", "Se você não sabe imagina eu"];
@@ -42,7 +42,7 @@ var manutenção = await db.get(`manutenção`)
     .setDescription(`As respostas são aleatórias`)	
     .addField(`**Dúvida**`, `${duvida}`)
     .addField(`Resposta`, `${replies [result]}`)
-    .setColor('#8500de')
+    .setColor('#0f4bff')
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .setThumbnail('https://cdn.discordapp.com/attachments/760597034138075158/763504895436783616/duvida-frequente.png')
     

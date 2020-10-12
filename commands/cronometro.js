@@ -15,7 +15,7 @@ var manutenção = await db.get(`manutenção`)
                 `\nNo momento fui enviada para outra galáxia\n` + 
 				`Em breve voltarei a responder por seus comandos.`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
-.setColor(`#8500de`)
+.setColor(`#0f4bff`)
       
      return message.channel.send(mnt)
       
@@ -30,7 +30,7 @@ var manutenção = await db.get(`manutenção`)
   .addField(`:bookmark: | **Permissão**`, `\`Nenhuma\``)
   .addField(`:twisted_rightwards_arrows: | **Alternativas**`, `\`${c.prefix}lembrete, ${c.prefix}lembrar\``)
   .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-  .setColor('#8500de')  
+  .setColor('#0f4bff')  
 
   let Timer = args[0];
 
