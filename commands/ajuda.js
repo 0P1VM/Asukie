@@ -61,8 +61,7 @@ message.delete();
 `<:setinha:763773726419583017> **Ban** - Bani um determinado usúario.\n` +
 `<:setinha:763773726419583017> **Unban** - Desbani algum usuário pelo id dele.\n` +
 `<:setinha:763773726419583017> **Kick** - Expulse algum membro do seu servidor.\n` +
-`<:setinha:763773726419583017> **Warn** - De um aviso pra algum usuário.\n` +
-`<:setinha:763773726419583017> **Allunban** - Desbani todos os usuários banidos do seu servidor.`)
+`<:setinha:763773726419583017> **Warn** - De um aviso pra algum usuário.`)
  .setFooter(`Página 2 de 5 | Requisitado: ${message.author.username}`, message.author.displayAvatarURL({ dynamic:true }))
  .setThumbnail(client.user.displayAvatarURL({ dynamic:true }))
   .setImage('https://i.imgur.com/rYKyIXl.png')
@@ -112,16 +111,14 @@ message.delete();
  `<:setinha:763773726419583017> **Tapa** - De um tapa em alguém.\n` +
  `<:setinha:763773726419583017> **Mcskin** - É um comando pra você conseguir a skin de alguma conta do Minecraft.\n` +
  `<:setinha:763773726419583017> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` + 
- `<:setinha:763773726419583017> **Deus** - Use o comando e veja oque deus nunca iria aceitar.\n` +
- `<:setinha:763773726419583017> **Calc** - Calcule alguma conta de matemática.\n` +                    
+ `<:setinha:763773726419583017> **Deus** - Use o comando e veja oque deus nunca iria aceitar.\n` +                   
  `<:setinha:763773726419583017> **Japauau** - Use o comando e veja um programa japonês reagindo ao o que você escreveu.\n` +
  `<:setinha:763773726419583017> **Hipocrisia** - Escreva algo pra aparecer no meme do "Enfim a hipocrisia".\n` +                    
  `<:setinha:763773726419583017> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
  `<:setinha:763773726419583017> **Matar** - Mate alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Hackear** - "hackei" alguém. **(Leve o comando na zoeira)**\n` +
  `<:setinha:763773726419583017> **Duvida** - Deixa eu tirar uma dúvida sua.\n` +
- `<:setinha:763773726419583017> **Hug** - De um abraço em algum amigo(a).\n` +                                      
- `<:setinha:763773726419583017> **Clima** - Veja o clima de alguma cidade.\n` +                   
+ `<:setinha:763773726419583017> **Hug** - De um abraço em algum amigo(a).\n` +                                                        
  `<:setinha:763773726419583017> **Dado** - Jogue dado comigo.\n` +
  `<:setinha:763773726419583017> **Roletarussa** - Jogue roletarussa comigo.\n` +                   
  `<:setinha:763773726419583017> **Baka** - Chame alguém de baka.`)
@@ -151,8 +148,9 @@ message.delete();
      `<:setinha:763773726419583017> **Botinfo** - Veja informações do bot toda.\n` +
      `<:setinha:763773726419583017> **Traduzir** - Traduza algum texto com facilidade e rapidez.\n` +                
      `<:setinha:763773726419583017> **Steam** - Veja as informações do seu jogo preferido da plataforma Steam.\n` +
-     `<:setinha:763773726419583017> **Latencia** - Veja a latência da Asukie.\n` +                
-     `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +
+     `<:setinha:763773726419583017> **Latencia** - Veja a latência da Asukie.\n` +            
+     `<:setinha:763773726419583017> **Clima** - Veja o clima de alguma cidade.\n` +                  
+     `<:setinha:763773726419583017> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +                     
      `<:setinha:763773726419583017> **Serverinfo** - Veja as informações do servidor.\n` +
      `<:setinha:763773726419583017> **Userinfo** - Veja informações de algum usuário.\n` +
      `<:setinha:763773726419583017> **Emojiinfo** - Veja informações de algum emoji do seu servidor.\n` +

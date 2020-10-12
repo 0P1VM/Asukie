@@ -34,12 +34,16 @@ var manutenção = await db.get(`manutenção`)
     .addField("Aguarde","Aguarde alguns segundos. <:Asukie_Blindao:764726364775251968>")
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 
+    const m = await message.channel.send(`Ping?`)
+    .then(botmsg => botmsg.delete({ timeout: 1}))
     let embed_ping = new Discord.MessageEmbed() // Aqui vai ser a terceira embed que o bot irá mostrar
     .setColor('#8500de')
     .setThumbnail('https://cdn.discordapp.com/attachments/759155689733226517/764875696710615130/asukieLatencia.png')
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .addField(` Latência`,[
-        `\`${parseInt(client.ws.ping)}\` ms`])
+        `\`${m.createdTimestamp - message.createdTimestamp}\` ms`])
+    .addField(` Latência API`,[
+        `\`${Math.round(client.ws.ping)}\` ms`])
 
     const msg = await message.channel.send(embed) // Aqui o bot irá mostrar a primeira embed
     setTimeout(() => { // Aqui criamos um timeout para mostrar a primeira embed com a duração de 3 segundos, para depois editar ela e mostrar a segunda embed
