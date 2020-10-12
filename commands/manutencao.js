@@ -25,7 +25,7 @@ message.delete();
             let embedon = new MessageEmbed()
             
 .setDescription(`<:b_offline2:753979547279687801> **|** Manutenção Desativada\n` + 
-                `\n<:seta1:762492762192478216> Para ativar a manutenção, utilize \`${c.prefix}manutencao on\``)
+                `\n<:SetaZu:765288356913086484> Para ativar a manutenção, utilize \`${c.prefix}manutencao on\``)
 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 .setColor(`#0f4bff`)
             db.set(`manutenção`, true)
@@ -37,7 +37,7 @@ message.delete();
             let embedoff = new MessageEmbed()
             
 .setDescription(`<:online:753979848883568720> **|** Manutenção Ativada\n` + 
-                `\n<:seta1:762492762192478216> Para desativar a manutenção, utilize \`${c.prefix}manutencao off\``)
+                `\n<:SetaZu:765288356913086484> Para desativar a manutenção, utilize \`${c.prefix}manutencao off\``)
 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
 .setColor(`#0f4bff`)
 
