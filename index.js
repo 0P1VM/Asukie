@@ -87,17 +87,4 @@ client.on('message', message => {
       }
     })
 
-
-client.on('guildMemberAdd', membro => {
-
-client.channels.cache.get('canal').send('mensagem')
-//canaID
-//mensagemBV
-
-module.exports.help = {
-    name: 'guildMemberAdd'
-}
-
-})
-
 client.login(config.token);

@@ -149,7 +149,8 @@ message.delete();
      `<:SetaZu:765288356913086484> **Traduzir** - Traduza algum texto com facilidade e rapidez.\n` +                
      `<:SetaZu:765288356913086484> **Steam** - Veja as informações do seu jogo preferido da plataforma Steam.\n` +
      `<:SetaZu:765288356913086484> **Latencia** - Veja a latência da Asukie.\n` +            
-     `<:SetaZu:765288356913086484> **Clima** - Veja o clima de alguma cidade.\n` +                  
+     `<:SetaZu:765288356913086484> **Clima** - Veja o clima de alguma cidade.\n` + 
+     `<:SetaZu:765288356913086484> **Roleinfo** - Veja as informações de algum cargo.\n` +               
      `<:SetaZu:765288356913086484> **Servericon** - Veja a foto do servidor em tamanho maior.\n` +                     
      `<:SetaZu:765288356913086484> **Serverinfo** - Veja as informações do servidor.\n` +
      `<:SetaZu:765288356913086484> **Userinfo** - Veja informações de algum usuário.\n` +
