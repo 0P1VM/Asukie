@@ -48,7 +48,7 @@ var tabela = [
 		url: "https://www.twitch.tv/asukie"
 	},
 	{
-		name: `alegria em ${client.guilds.cache.size} servidores 💙`,
+		name: `em ${client.guilds.cache.size} servidores 💙`,
 		type: "STREAMING",
 		url: "https://www.twitch.tv/asukie"
 	},
@@ -86,5 +86,18 @@ client.on('message', message => {
         message.channel.send(`${message.author}`, marcou)
       }
     })
+
+
+client.on('guildMemberAdd', membro => {
+
+client.channels.cache.get('canal').send('mensagem')
+//canaID
+//mensagemBV
+
+module.exports.help = {
+    name: 'guildMemberAdd'
+}
+
+})
 
 client.login(config.token);

@@ -1,24 +1,30 @@
-const Discord = require('discord.js')
-const moment = require('moment')
-const delay = ms => new Promise(res => setTimeout(res, ms));
-var cinfo = new Set()
+const Discord = require("discord.js");
+const db = require('quick.db')
 
-module.exports.run = async (client, message, args, database) => {
-    var cargo = message.mentions.roles.first();
-    const embed = new Discord.MessageEmbed()
-    .setTitle(`Role Info`)
+exports.run = (client, message, args) => {
+  if (!message.member.hasPermission(["MANAGE_ROLES", "ADMINISTRATOR"]))
+    return message.channel.send(
+      "You dont have permission to perform this command!"
+    );
+  let role =
+    message.guild.roles.cache.find(r => r.name == args[0]) ||
+    message.guild.roles.cache.find(r => r.id == args[0]) ||
+    message.mentions.roles.first() ||
+    args.join(" ");
+  if (!role) return message.reply("Please specify a role.");
+  let embed = new Discord.MessageEmbed()
+    .setColor(`${role.hexColor}`)
+    .addField("ID", `${role.id}`, true)
+    .addField("Nome", "`" + `${role.name}` + "`", true)
+    .addField("Menção", `\`<@&${role.id}>\``, true)
+    .addField("Hex", `\`${role.hexColor}\``, true)
+    .addField("Criado", `${role.createdAt}`, true)
+    .addField(`Membros`, `${role.members.size}`, true)
+    .addField(`Posição`, `${role.position}`, true)
+    .addField(`Permissões elevadas`, `${role.hoist}`, true)
+    .addField(`Mencionavel`, `${role.mentionable}`, true)
+    .addField(`Gerenciada`, `${role.managed}`, true)
+    .addField(`Permissões`, `${role.permissions.size}`,true)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-    .setColor(`#0f4bff`)
-    .addField("Nome", `\`${cargo.name}\``)
-    .addField("ID", `\`<&${cargo.id}>\``)
-    .addField("Posição", `${cargo.position}`)
-    .addField("Cor", `\`${cargo.hexColor}\``)
-    .addField("Menção", `${cargo.rawPosition}`)
-    .addField("Criador", `${moment(cargo)}`)
-    message.channel.send(embed)
-}
-
-module.exports.help = {
-name: 'roleinfo',
-aliases: ['rinfo']
-}
+  message.channel.send(embed);
+};
