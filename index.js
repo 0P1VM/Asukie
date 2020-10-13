@@ -13,15 +13,11 @@ client.on("message", message => {
     message.content.startsWith(`<@!${client.user.id}>`)
   )
     return;
+
   const args = message.content
     .trim()
     .slice(config.prefix.length)
     .split(/ +/g);
-
-
-const noo = new Discord.MessageEmbed()
-.setDescription(`<a:aviso:758897403277082654> **|** ${message.author}, O comando não existe, utilize \`${config.prefix}ajuda\`.`)
-.setColor("#0f4bff")
   const command = args.shift().toLowerCase();
 
   try {
@@ -30,7 +26,6 @@ const noo = new Discord.MessageEmbed()
   } catch (err) {
     console.error(err);
     message.delete();
-message.channel.send(noo)
   }
 })
 
@@ -68,9 +63,9 @@ client.on('message', message => {
 	 if (message.author.bot) return;
   if (message.channel.type == "dm") return;
 	let marcou = new Discord.MessageEmbed()
-  .setTitle(`**<:duvida:762803797109506059> | Está perdido(a), ${message.author.username} ?**`)
+  .setTitle(`**<a:curioso:760366016495616030> | Está perdido(a), ${message.author.username} ?**`)
 	.setDescription(
-	`**<:SetaZu:765288356913086484> Eu me chamo ${client.user.username} e sou um bot com várias funções, criado para ajudar o seu servidor! <a:brilho:761081098368581632>**\n` +
+	`**<:SetaZu:765288356913086484> Eu me chamo ${client.user.username} e sou um bot com várias funções, criado para ajudar o seu servidor! <a:brilhob:758108174187233290>**\n` +
   ``)
 	.setThumbnail('https://cdn.discordapp.com/emojis/739200876752797697.png?v=1')
 	.addFields(

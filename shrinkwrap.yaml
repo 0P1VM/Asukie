@@ -7,7 +7,7 @@ dependencies:
   fs: 0.0.2
   fs-extra: 9.0.1
   jimp: 0.16.1
-  mal-scraper: 2.11.1
+  mal-scraper: 2.11.2
   mathjs: 7.5.1
   moment: 2.29.1
   ms: 2.1.2
@@ -1679,7 +1679,7 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
-  /mal-scraper/2.11.1:
+  /mal-scraper/2.11.2:
     dependencies:
       axios: 0.19.2
       cheerio: 1.0.0-rc.3
@@ -1691,7 +1691,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-hWn1T6aoKv+qTsekXfN3Xs8IyTGhQQ5X5WGoAy8TzB1aj1Px/e9AehZoGCaE6oepNXUW2jypSu3ngYssxf4A2g==
+      integrity: sha512-sk4bklhDKbtKV2++BUVbeWGBaFwSUY99DvF/Ao4Bm5wyZoob+yuYtmnmOjvJrU58YPtq3caLuO4S6YezbNEzEg==
   /match-sorter/4.2.1:
     dependencies:
       '@babel/runtime': 7.11.2
@@ -2850,7 +2850,7 @@ specifiers:
   fs: ^0.0.2
   fs-extra: ^9.0.1
   jimp: ^0.16.1
-  mal-scraper: ^2.11.1
+  mal-scraper: ^2.11.2
   mathjs: ^7.5.1
   moment: ^2.29.1
   ms: ^2.1.2
