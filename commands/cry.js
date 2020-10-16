@@ -1,11 +1,15 @@
-const Discord = require('discord.js');
-const superagent = require('superagent');
+const Discord = require("discord.js");
+const { Random } = require("something-random-on-discord");
 const db = require('quick.db')
+const random = new Random()
+const b = require('../renegados/renegados.js')
 
-exports.run = async (client, message, args) => {
+module.exports = {
+  name: "cry",
+  run: async (client, message, args) => {
 message.delete();
 
-var manutenção = await db.get(`manutenção`)
+    var manutenção = await db.get(`manutenção`)
   
     if(!manutenção === true){
 
@@ -21,18 +25,15 @@ var manutenção = await db.get(`manutenção`)
       
     } 
 
-    const { body } = await superagent
-    .get("https://nekos.life/api/v2/img/ngif");
+    let user = message.mentions.users.first() || client.users.cache.get(args[0]);
+    let data = await random.getAnimeImgURL("cry");
     
     let embed = new Discord.MessageEmbed()
+    .setDescription(`${message.author} **Não chore se não eu choro também** <:AsukieCry:762822476828508161>`)
+    .setImage(data)
     .setColor("#0f4bff")
-    .setDescription(`<:nekoniii:763847144226029598> **Neko-niiii**`)
-    .setImage(body.url)
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
-    message.channel.send({embed})
-
+    
+    message.channel.send(embed)
 }
-exports.help = {
-    name: 'neko',
-    aliases: []
 }

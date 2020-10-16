@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const moment = require("moment")
 const db = require('quick.db')
+const b = require('../renegados/renegados.js')
+
 moment.locale('pt-BR')
 
 exports.run = async (client, message, args) => {
@@ -21,7 +23,7 @@ var manutenção = await db.get(`manutenção`)
      return message.channel.send(mnt)
       
     } 
-
+  
         function checkDays(date) {
         let now = new Date();
         let diff = now.getTime() - date.getTime();
@@ -43,7 +45,7 @@ var manutenção = await db.get(`manutenção`)
     { name: `<:membros_Asukie:761659699266715668> Quantidade de membros:`, value: `ㅤ**<:online:753979848883568720> ${usuarios.filter(member => member.presence.status === 'online').size}**\n` +
     `ㅤ**<:idle:753983926917267456> ${usuarios.filter(member => member.presence.status === 'idle').size}**\n` +
     `ㅤ**<:dnd:753979743828967576> ${usuarios.filter(member => member.presence.status === 'dnd').size}**\n` +
-    `ㅤ**<:setinha:763773726419583017> ${amiguinhos}**`, inline: true},
+    `ㅤ**<:SetaZu:765288356913086484> ${amiguinhos}**`, inline: true}, //nem começa eu vou tirar
    { name: `ㅤㅤ<:canais_Asukie:761661479615070248> Canais`, value: `ㅤㅤㅤ**Texto:** ${canais.filter(channel => channel.type === 'text').size}\n` +
                                                                 `ㅤㅤㅤ**Voz:** ${canais.filter(channel => channel.type === 'voice').size}`, inline: true}
 )

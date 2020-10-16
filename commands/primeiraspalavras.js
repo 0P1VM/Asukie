@@ -1,9 +1,11 @@
 const Discord = require('discord.js')
 var Jimp = require("jimp")
 const db = require('quick.db')
+const b = require('../renegados/renegados.js')
 
 exports.run = async (client, message, args) => {
 message.delete();
+ 
 
 var manutenção = await db.get(`manutenção`)
   

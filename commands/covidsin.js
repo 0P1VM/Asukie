@@ -1,5 +1,6 @@
 const Discord = require('discord.js')
 const db = require('quick.db')
+const b = require('../renegados/renegados.js')
 
 module.exports = {
     name: 'covidsin',
@@ -8,6 +9,8 @@ module.exports = {
     usage: '$covidsin',
     cooldown: 5,
 	run: async (client, message, args) => {
+message.delete();
+
 
 var manutenção = await db.get(`manutenção`)
   

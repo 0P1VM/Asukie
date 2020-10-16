@@ -2,8 +2,10 @@ const Discord = require("discord.js");
 const cpuStat = require("cpu-stat");
  const os = require('os')
 const db = require('quick.db')
+const b = require('../renegados/renegados.js')
  
 exports.run = async (client, message, args) => {
+message.delete();
 
 var manutenção = await db.get(`manutenção`)
   

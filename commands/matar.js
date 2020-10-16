@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const db = require('quick.db')
+const b = require('../renegados/renegados.js')
 
 module.exports = {
     name: 'kill',
