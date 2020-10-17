@@ -111,9 +111,11 @@ message.delete();
  `<:SetaZu:765288356913086484> **Tapa** - De um tapa em alguém.\n` +
  `<:SetaZu:765288356913086484> **Deus** - Use o comando e veja oque deus nunca iria aceitar.\n` +                   
  `<:SetaZu:765288356913086484> **Japauau** - Use o comando e veja um programa japonês reagindo ao o que você escreveu.\n` +
+ `<:SetaZu:765288356913086484> **Supreme** - Use o comando e veja a logo da Supreme com oque você escreveu.\n` +                    
  `<:SetaZu:765288356913086484> **Hipocrisia** - Escreva algo pra aparecer no meme do "Enfim a hipocrisia".\n` +                    
  `<:SetaZu:765288356913086484> **Conquista** - Use o comando, e conquiste oque mais deseja.\n` +
- `<:SetaZu:765288356913086484> **Matar** - Mate alguém. **(Leve o comando na zoeira)**\n` +
+  `<:SetaZu:765288356913086484> **Suicide** - "Se mate usando o comando. **(Leve o comando na zoeira, são apenas gif's de Animes)**\n` +                    
+ `<:SetaZu:765288356913086484> **Matar** - Mate alguém. **(Leve o comando na zoeira, são apenas gif's de Animes)**\n` +
  `<:SetaZu:765288356913086484> **Hackear** - "hackei" alguém. **(Leve o comando na zoeira)**\n` +
  `<:SetaZu:765288356913086484> **Duvida** - Deixa eu tirar uma dúvida sua.\n` +
  `<:SetaZu:765288356913086484> **Soco** - De um soco em alguém chato.\n` +  
@@ -139,7 +141,8 @@ message.delete();
      .setAuthor('Utilidade', client.user.displayAvatarURL({ dynamic:true }))
      .setDescription(`<a:gatinho_:763776921326190655>**·Prefixo:** \`${c.prefix}\`\n` +
      `<:SetaZu:765288356913086484> **Mcskin** - É um comando pra você conseguir a skin de alguma conta do Minecraft.\n` +
- `<:SetaZu:765288356913086484> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` +                 
+     `<:SetaZu:765288356913086484> **Mchead** - É um comando pra você conseguir a Cabeça de alguma conta do Minecraft.\n` +    
+     `<:SetaZu:765288356913086484> **Bug** - Reporte alguma falha do bot usando esse comando.\n`+                
      `<:SetaZu:765288356913086484> **Cpu** - Veja minhas configurações de cpu.\n`+
      `<:SetaZu:765288356913086484> **Avatar** - Veja seu avatar em um tamanho maior ou de outro membro.\n` +
      `<:SetaZu:765288356913086484> **Covid** - Veja os casos do Covid-19 no mundo inteiro.\n` +
@@ -150,7 +153,7 @@ message.delete();
      `<:SetaZu:765288356913086484> **Traduzir** - Traduza algum texto com facilidade e rapidez.\n` +                
      `<:SetaZu:765288356913086484> **Steam** - Veja as informações do seu jogo preferido da plataforma Steam.\n` +
      `<:SetaZu:765288356913086484> **Serfil** - Obtenha as informações sobre Séries e Filmes.\n` +
-     `<:SetaZu:765288356913086484> **Pais** - Obtenha as informações de algum Páis.\n` +                            
+     `<:SetaZu:765288356913086484> **Pais** - Obtenha as informações de algum País.\n` +                            
      `<:SetaZu:765288356913086484> **Latencia** - Veja a latência da Asukie.\n` +            
      `<:SetaZu:765288356913086484> **Clima** - Veja o clima de alguma cidade.\n` + 
      `<:SetaZu:765288356913086484> **Roleinfo** - Veja as informações de algum cargo.\n` +               

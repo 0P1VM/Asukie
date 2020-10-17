@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const request = require("request");
 const db = require('quick.db');
 
+
 client.on("message", async message => {
   if (message.author.bot) return;
   if (message.channel.type == "dm") return;
@@ -44,8 +45,8 @@ var tabela = [
       url: "https://www.twitch.tv/asukie"
     },
 	{
-		name: `Encontrou falhas? Reporte para o suporte.`,
-		type: "STREAMING",
+		name: `Encontrou falhas? use o comando ${config.prefix}bug e descreva-o.`,
+		type: "PLAYING",
 		url: "https://www.twitch.tv/asukie"
 	},
 	{
