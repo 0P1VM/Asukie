@@ -4,7 +4,7 @@ const client = new Discord.Client();
 const request = require("request");
 const db = require('quick.db');
 const dbm = require('mongoose')
-
+var blockedUsers = ['729854282521903165', '348202483098583052'];
 
 client.on("message", async message => {
   if (message.author.bot) return;
@@ -15,6 +15,8 @@ client.on("message", async message => {
     message.content.startsWith(`<@!${client.user.id}>`)
   )
     return;
+
+if (blockedUsers.includes(message.author.id) || (message.author.bot)) return message.delete();
   let embed = new Discord.MessageEmbed()
   .setDescription(`<:Asukie_atencao:766406396337193020> **|** O comando não existe, utilize \`${config.prefix}ajuda\` para mais informações.`)
   .setColor("#0f4bff")
@@ -23,14 +25,24 @@ client.on("message", async message => {
     .slice(config.prefix.length)
     .split(/ +/g);
   const command = args.shift().toLowerCase();
+let cmdlog = new Discord.MessageEmbed()
+.setColor('#0f4bff')
+.setAuthor(`${client.user.username} | Log`, client.user.displayAvatarURL({dynamic: true}))
+.setDescription(`**<:Info_1:768615897891078164> Autor:** \`${message.author.tag}\` **/** \`${message.author.id}\`\n`+ 
+`\n<:ModulE:762729478757023834>  **Comando executado:** \`${config.prefix}${command}\``)
+.setFooter(`${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
+.setTimestamp()
 
+ const canal = client.channels.cache.get('769739393140260874').send(cmdlog)
   try {
     const commandFile = require(`./commands/${command}.js`);
     commandFile.run(client, message, args);
   } catch (err) {
     console.error(err);
     message.delete();
-  message.channel.send(embed)
+  message.channel.send(embed).then(m => {
+      m.delete({ timeout: 9000 });
+    });
     
 
     
@@ -94,5 +106,7 @@ client.on('message', message => {
         message.channel.send(`${message.author}`, marcou)
       }
     })
+
+
 
 client.login(config.token);
