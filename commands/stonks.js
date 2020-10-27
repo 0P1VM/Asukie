@@ -2,7 +2,6 @@ const jimp = require("jimp")
 const Discord = require('discord.js')
 const db = require("quick.db")
 const c = require('../config.json')
-const b = require('../renegados/renegados.js')
 
 exports.run = async (client, message, args) => {
 message.delete();
@@ -19,7 +18,9 @@ var manutenção = await db.get(`manutenção`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
 .setColor(`#0f4bff`)
       
-     return message.channel.send(mnt)
+     return message.channel.send(mnt).then(m => {
+m.delete({timeout: 20000})
+})
       
     } 
 
@@ -35,7 +36,9 @@ var manutenção = await db.get(`manutenção`)
                 image.resize(685, 500)
                 image.print(font, 70, 80, args.join(" "), 900)
                 image.getBuffer(jimp.MIME_PNG, (err, i) => {
-                    message.channel.send({files: [{ attachment: i, name: "mime_dos_stonks.png"}]})
+                    message.channel.send({files: [{ attachment: i, name: "mime_dos_stonks.png"}]}).then(m => {
+m.delete({timeout: 20000})
+})
                 })
             })
         })

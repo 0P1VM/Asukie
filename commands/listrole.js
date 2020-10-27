@@ -1,8 +1,8 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
 const db = require('quick.db')
 
 exports.run = async (client, message, args) => {
-message.delete();
+    message.delete();
 
 var manutenção = await db.get(`manutenção`)
   
@@ -19,21 +19,14 @@ var manutenção = await db.get(`manutenção`)
      return message.channel.send(mnt)
       
     } 
-
-    let reason = args.slice(0).join(' ');
-    if (reason.length < 1) return message.reply('<a:errado:753245066965024871> **|** Cite o nick de alguma conta criada do Minecraft, e consiga a skin.')
-
-    let embed = new Discord.MessageEmbed()
-
-        .setTitle(`Nickname: ${args[0]}`)
-        .setDescription(`<:ModulE:762729478757023834> **[Clique Aqui](https://mc-heads.net/body/${args[0]})**`)
-        .setImage(`https://mc-heads.net/body/${args[0]}`)
+        const roles = new Discord.MessageEmbed()
+        .setTitle(`Asukie™ | ListRole`)//${message.guild.name}
+        .setThumbnail("https://cdn.discordapp.com/attachments/759155689733226517/770321424744972349/ListRoleAsukei.png")
+        .setDescription(message.guild.roles.cache.map(r => `${r}`).join(", "))
         .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-        .setColor('#0f4bff')
-    message.channel.send(embed)
-}
-
-exports.help = {
-    name: 'mcskin',
-    aliases: ['skin']
-}
+        .setColor("#0f4bff")
+        message.channel.send(roles).then(m => {
+        //await message.channel.send(roles).then(m => {
+//m.delete({timeout: 15000})
+    }
+                                               )}

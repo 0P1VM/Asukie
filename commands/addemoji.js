@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const c = require('../config.json')
 const db = require('quick.db')
-const b = require('../renegados/renegados.js')
 
 exports.run = async (client, message, args) => {
 message.delete();
@@ -33,11 +32,15 @@ var manutenção = await db.get(`manutenção`)
 
   try {
     message.guild.emojis.create(args[1], args[0]).then(emoji => {
-      message.channel.send(`${emoji} **|** ${message.author} Emoji adicionado com sucesso!`)
+      message.channel.send(`${emoji} **|** ${message.author} Emoji adicionado com sucesso!`).then(m => {
+m.delete({timeout: 20000})
+})
     })
   } catch(error) {
             console.log(error);
-message.channel.send('Maximum number of emojis reached (50)')
+message.channel.send('<:Asukie_atencao:766406396337193020> **|** Maximum number of emojis reached (50)').then(m => {
+m.delete({timeout: 20000})
+})
         };
 }
 

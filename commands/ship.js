@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const c = require('../config.json')
 const db = require('quick.db')
-const b = require('../renegados/renegados.js')
 
 module.exports.run = async(client, message, args) => {
 message.delete();
@@ -59,5 +58,7 @@ var manutenção = await db.get(`manutenção`)
                                 .setColor('#0f4bff')
                                 .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}));
                                 
-                                message.channel.send(embed)
+                                message.channel.send(embed).then(m => {
+m.delete({timeout: 20000})
+})
 }

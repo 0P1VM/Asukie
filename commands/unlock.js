@@ -1,6 +1,5 @@
 const Discord = require('discord.js')
 const db = require('quick.db')
-const b = require('../renegados/renegados.js')
 
     module.exports.run = async(client, message, args) => {
        message.delete();
@@ -17,7 +16,9 @@ var manutenção = await db.get(`manutenção`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
 .setColor(`#0f4bff`)
       
-     return message.channel.send(mnt)
+     return message.channel.send(mnt).then(m => {
+m.delete({timeout: 20000})
+})
       
     } 
 

@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const db = require('quick.db')
-const b = require('../renegados/renegados.js')
+
 
 exports.run = async(client, message, args) => { // Aqui definimos nosso client, message e args
 message.delete();
@@ -36,8 +36,9 @@ var manutenção = await db.get(`manutenção`)
     const m = await message.channel.send(`Latencia?`)
     .then(botmsg => botmsg.delete({ timeout: 1}))
     let embed_ping = new Discord.MessageEmbed() // Aqui vai ser a terceira embed que o bot irá mostrar
+    .setAuthor("Asukie™ | Latência", client.user.displayAvatarURL({dynamic: true}))
     .setColor('#0f4bff')
-    .setThumbnail("https://cdn.discordapp.com/attachments/759155689733226517/769728182856712212/Icon_Low-latency.png")
+    .setThumbnail("https://cdn.discordapp.com/attachments/759155689733226517/770317372308979712/LatenciaAsukie.png")
     .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
     .addField(` Latência`,[
         `\`${m.createdTimestamp - message.createdTimestamp}\` ms`])

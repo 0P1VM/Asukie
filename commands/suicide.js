@@ -1,7 +1,6 @@
 const Discord = require('discord.js')
 const { suicide } = require('star-labs')
 const db = require('quick.db')
-const b = require('../renegados/renegados.js')
 
 module.exports = {
   config: {
@@ -24,7 +23,9 @@ var manutenção = await db.get(`manutenção`)
 .setThumbnail('https://i.pinimg.com/originals/91/de/b5/91deb532d34761aaf73e43c758dc5446.png')
 .setColor(`#0f4bff`)
       
-     return message.channel.send(mnt)
+     return message.channel.send(mnt).then(m => {
+m.delete({timeout: 20000})
+})
       
     } 
 
@@ -33,6 +34,8 @@ var manutenção = await db.get(`manutenção`)
       .setImage(suicide())
       .setDescription(`${message.author} **Acaba de se suicidar.** <:Anjinhoo:766816233915940874>`)
       .setFooter(`Requisitado: ${message.author.username}`, message.author.displayAvatarURL({dynamic: true}))
-    )
+    ).then(m => {
+m.delete({timeout: 20000})
+})
   }
 }
